@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Learning Tree Edusolutions – Objective Type Questions, Workshops & Books</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Learning Tree Edusolutions – publishers of Objective Type Questions in Business Studies for Class XII, CUET, CBSE, Olympiads and competitive exams."
+  />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#hero" class="brand">
+        <div class="brand-logo">LTE</div>
+        <div class="brand-text">
+          <span class="brand-name" id="brand-name">Learning Tree Edusolutions</span>
+          <span class="brand-tagline" id="brand-tagline"></span>
+        </div>
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="main-nav">
+        <ul class="nav-links" id="nav-links">
+          <!-- filled by JS from JSON -->
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero section">
+    <div class="container hero-inner">
+      <div class="hero-text">
+        <h1 id="hero-title"></h1>
+        <p class="hero-subtitle" id="hero-subtitle"></p>
+
+        <div class="hero-actions">
+          <a href="#books" class="btn btn-primary">Buy Books</a>
+          <a href="#workshops" class="btn btn-outline">Explore Workshops</a>
+        </div>
+
+        <ul class="hero-highlights" id="hero-highlights"></ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-book-card">
+          <img
+            id="hero-book-cover"
+            src="assets/img/book-cover-bst12.jpg"
+            alt="Book cover"
+          />
+          <div class="hero-book-info">
+            <h3 id="hero-book-title"></h3>
+            <p id="hero-book-meta"></p>
+            <button id="hero-book-cta" class="btn btn-sm btn-primary">
+              View Book Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>About Us</h2>
+        <p class="section-subtitle" id="about-subtitle"></p>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-text" id="about-text">
+          <!-- paragraphs from JSON -->
+        </div>
+
+        <aside class="about-aside">
+          <div class="card card-author">
+            <img
+              src="assets/img/rk-mahajan.jpg"
+              alt="R.K. Mahajan"
+              class="author-photo"
+              onerror="this.style.display='none'"
+            />
+            <h3 id="author-name"></h3>
+            <p id="author-role"></p>
+            <p id="author-note" class="author-note"></p>
+            <ul class="contact-list" id="contact-list"></ul>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workshops -->
+  <section id="workshops" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Workshops</h2>
+        <p class="section-subtitle" id="workshops-subtitle"></p>
+      </div>
+      <div class="cards-grid" id="workshops-list">
+        <!-- workshop cards from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Books / Buy -->
+  <section id="books" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Books</h2>
+        <p class="section-subtitle" id="books-subtitle"></p>
+      </div>
+
+      <div class="cards-grid" id="books-list">
+        <!-- book cards from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Testimonials</h2>
+        <p class="section-subtitle" id="testimonials-subtitle"></p>
+      </div>
+
+      <div class="testimonial-slider">
+        <button class="slider-btn prev" aria-label="Previous testimonial">&larr;</button>
+        <div class="testimonial-track" id="testimonial-track">
+          <!-- testimonial cards from JSON -->
+        </div>
+        <button class="slider-btn next" aria-label="Next testimonial">&rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates / Photos -->
+  <section id="gallery" class="section section-alt">
+    <div class="container">
+      <div class="section-header">
+        <h2>Certificates &amp; Photos</h2>
+        <p class="section-subtitle" id="gallery-subtitle"></p>
+      </div>
+
+      <div class="gallery-grid" id="gallery-grid">
+        <!-- gallery items from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Links -->
+  <section id="links" class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Useful Links</h2>
+        <p class="section-subtitle" id="links-subtitle"></p>
+      </div>
+
+      <div class="links-grid" id="links-grid">
+        <!-- links from JSON -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong id="footer-name"></strong>
+        <p id="footer-address"></p>
+      </div>
+      <div class="footer-meta">
+        <span id="footer-contact"></span>
+        <span id="footer-email"></span>
+        <span>&copy; <span id="year"></span> <span id="footer-name-inline"></span>. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Book Modal -->
+  <div class="modal" id="book-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="book-modal-title">
+      <button class="modal-close" aria-label="Close" data-modal-close>&times;</button>
+      <div class="modal-content" id="book-modal-content">
+        <!-- filled by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Image Lightbox -->
+  <div class="modal" id="lightbox-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-modal-close></div>
+    <div class="modal-dialog modal-dialog-large">
+      <button class="modal-close" aria-label="Close" data-modal-close>&times;</button>
+      <div class="modal-content lightbox-content">
+        <img id="lightbox-image" src="" alt="" />
+        <p id="lightbox-caption"></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js" defer></script>
+</body>
+</html>

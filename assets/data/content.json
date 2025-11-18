@@ -1,0 +1,188 @@
+{
+    "site": {
+      "name": "Learning Tree Edusolutions",
+      "tagline": "Objective Type Questions • Workshops • Exam Excellence",
+      "heroTitle": "Objective Type Questions that prepare students for Boards, CUET & Olympiads",
+      "heroSubtitle": "Curated by experienced Business Studies educators, aligned with the latest CBSE guidelines and designed for high-stakes exams.",
+      "heroHighlights": [
+        "3000+ quality questions in multiple formats",
+        "NCERT-based, competency-focused content",
+        "Perfect for CBSE Class XII, CUET, Olympiads & competitive exams"
+      ],
+      "navItems": [
+        { "label": "About", "target": "about" },
+        { "label": "Workshops", "target": "workshops" },
+        { "label": "Books", "target": "books" },
+        { "label": "Testimonials", "target": "testimonials" },
+        { "label": "Certificates & Photos", "target": "gallery" },
+        { "label": "Links", "target": "links" }
+      ]
+    },
+    "about": {
+      "subtitle": "One place for concept clarity, exam-oriented practice and teacher-friendly resources.",
+      "paragraphs": [
+        "Learning Tree Edusolutions brings together experienced Business Studies teachers and paper-setters to create focused resources for senior secondary students.",
+        "Our flagship series, 'Objective Type Questions in Business Studies – Class XII', is aligned with the latest CBSE syllabus and circulars. It gives students structured practice in the exact formats that appear in exams: MCQs, case-based questions, assertion–reason, statement correction, true/false, fill in the blanks and more.",
+        "We work closely with school teachers, workshop participants and contributors from reputed schools to keep our content practical, classroom-tested and up-to-date."
+      ],
+      "author": {
+        "name": "R. K. Mahajan",
+        "role": "Author & Director, Learning Tree Edusolutions",
+        "note": "Best wishes for your academic and competitive success. With the right practice, every student can feel confident answering objective type questions.",
+        "contacts": [
+          { "type": "Phone", "value": "9810003854" },
+          { "type": "Office", "value": "Site – 1/215, Vikas Puri, New Delhi – 110018" },
+          { "type": "Email", "value": "care.lte2020@gmail.com" }
+        ]
+      }
+    },
+    "workshops": {
+      "subtitle": "Hands-on, exam-oriented workshops for teachers and students.",
+      "items": [
+        {
+          "title": "Objective Type Questions in Business Studies – Teacher Workshop",
+          "description": "A focused session for Business Studies teachers on designing and evaluating competency-based MCQs, case-based questions and assertion-reason items as per CBSE guidelines.",
+          "dateLabel": "Upcoming / On-request",
+          "location": "Online or at your school",
+          "image": "assets/img/workshop-1.jpg",
+          "tags": ["Teachers", "CBSE", "Objective Questions"]
+        },
+        {
+          "title": "Score 100 in Business Studies – Student Strategy Session",
+          "description": "A practical workshop for Class XII students on approaching objective type questions, avoiding common mistakes and using the LTE question bank effectively.",
+          "dateLabel": "Custom dates for schools",
+          "location": "School campus / Online",
+          "image": "assets/img/workshop-2.jpg",
+          "tags": ["Students", "Class XII", "Boards", "CUET"]
+        }
+      ]
+    },
+    "books": {
+      "subtitle": "Books you can directly buy from Amazon or your preferred marketplace.",
+      "items": [
+        {
+          "id": "bst12-otq",
+          "title": "Objective Type Questions on Business Studies – Class XII",
+          "edition": "Latest Edition",
+          "class": "CBSE Class XII",
+          "coverImage": "assets/img/backcover.jpeg",
+          "backImage": "assets/img/frontcover.jpeg",
+          "price": 275,
+          "currency": "INR",
+          "questionCount": "3000+",
+          "suitableFor": ["CUET", "CBSE Board", "Olympiads", "Competitive Exams"],
+          "descriptionHeading": "One Book, Multiple Benefits",
+          "description": [
+            "Why buy multiple books when one comprehensive guide can serve all your needs?",
+            "This book is thoughtfully designed to support your CBSE Board examination preparation and also serves as a valuable resource for CUET, Olympiads and other competitive exams."
+          ],
+          "bullets": [
+            "NCERT-based: aligned with NCERT text, phrases and vocabulary for seamless understanding.",
+            "Expert authors: prepared by experienced Business Studies authors and reviewers with decades of classroom experience.",
+            "Tailored content: includes deleted topics list for CBSE students and additional content for CUET aspirants.",
+            "Extensive practice: 3000+ practice questions in MCQs, case-based MCQs, assertion–reason, statement correction, true/false, fill in the blanks and one-word/one-sentence answer formats."
+          ],
+          "featuresHeading": "Features Based On",
+          "features": [
+            "CUET & CBSE syllabus",
+            "CBSE Circular 57/2022",
+            "Competency-based MCQs",
+            "True / False questions",
+            "Reason and Assertion questions",
+            "CPA 2019",
+            "Fill in the Blanks",
+            "Correct / Incorrect statement items"
+          ],
+          "contributorsHeading": "List of Contributors",
+          "contributors": [
+            "Ms Akanksha Garg, Vishwa Bharti Public School, Noida (U.P.)",
+            "Ms Mridula Chawla, Shiv Vani Model School, Dwarka, New Delhi",
+            "Ms Parul Jain, Navy Children School, Chanakyapuri, New Delhi",
+            "Ms Priyanka Jain, HOD Commerce, Amity International School, Gurugram, Haryana",
+            "Ms Rashmi Kaul, HOD Commerce, Kothari International School, Noida, U.P.",
+            "Mr Sameer Bhatia, Maxfort School, Rohini, New Delhi",
+            "Ms Sumathy Raghunath, HOD Commerce, Cambridge School, Noida, U.P.",
+            "Ms Varsha Khajanchi, Manav Rachna International School, Faridabad"
+          ],
+          "buyUrl": "https://www.amazon.in/your-book-link-here",
+          "ctaText": "Buy on Amazon"
+        }
+      ]
+    },
+    "testimonials": {
+      "subtitle": "What teachers and students say about LTE books and workshops.",
+      "items": [
+        {
+          "name": "Commerce Teacher, CBSE School",
+          "role": "New Delhi",
+          "message": "The LTE Objective Type Questions book mirrors the pattern of the actual paper. It has become our go-to resource for unit tests and revisions."
+        },
+        {
+          "name": "Class XII Student",
+          "role": "Gurugram",
+          "message": "The assertion–reason and case-based questions gave me exactly the kind of practice I needed for Boards and CUET. I felt very confident in the exam."
+        },
+        {
+          "name": "Academic Coordinator",
+          "role": "Noida",
+          "message": "The workshop helped our teachers understand competency-based questions far better. We now use LTE material in regular classroom discussions."
+        }
+      ]
+    },
+    "gallery": {
+      "subtitle": "Snapshots from workshops, training sessions and recognition of our contributors.",
+      "items": [
+        {
+          "title": "Teacher Training Session",
+          "caption": "Workshop on CBSE-aligned Objective Type Questions in Business Studies.",
+          "image": "assets/img/workshop-1.jpg"
+        },
+        {
+          "title": "Student Interaction",
+          "caption": "Strategy session with Class XII students on scoring high in Business Studies.",
+          "image": "assets/img/workshop-2.jpg"
+        },
+        {
+          "title": "Certificate of Appreciation",
+          "caption": "Recognition for content contribution and academic support.",
+          "image": "assets/img/cert-1.jpg"
+        },
+        {
+          "title": "Partner School",
+          "caption": "Collaboration with a leading school for Business Studies support.",
+          "image": "assets/img/cert-2.jpg"
+        }
+      ]
+    },
+    "links": {
+      "subtitle": "Quick access to key resources and profiles.",
+      "items": [
+        {
+          "label": "Official Website – LearnTreeEdu.com",
+          "url": "https://learntreeedu.com",
+          "type": "Website"
+        },
+        {
+          "label": "Buy Objective Type Questions – Business Studies Class XII (Amazon)",
+          "url": "https://www.amazon.in/your-book-link-here",
+          "type": "Buy Book"
+        },
+        {
+          "label": "Email – care.lte2020@gmail.com",
+          "url": "mailto:care.lte2020@gmail.com",
+          "type": "Contact"
+        },
+        {
+          "label": "Call – 9810003854",
+          "url": "tel:+919810003854",
+          "type": "Contact"
+        }
+      ]
+    },
+    "footer": {
+      "address": "Site – 1/215, Vikas Puri, New Delhi – 110018",
+      "phone": "9953599497",
+      "email": "care.lte2020@gmail.com"
+    }
+  }
+  
