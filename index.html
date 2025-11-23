@@ -50,7 +50,7 @@
 
         <div class="hero-actions">
           <a href="#books" class="btn btn-primary">Buy Books</a>
-          <a href="#workshops" class="btn btn-outline">Explore Workshops</a>
+          <a href="#workshops" class="btn btn-outline">View Workshop Photos</a>
         </div>
 
         <ul class="hero-highlights" id="hero-highlights"></ul>
@@ -58,6 +58,7 @@
 
       <div class="hero-visual">
         <div class="hero-book-card">
+          <!-- this src is just a fallback; JS will replace it with JSON coverImage -->
           <img
             id="hero-book-cover"
             src="assets/img/book-cover-bst12.jpg"
@@ -106,11 +107,11 @@
     </div>
   </section>
 
-  <!-- Workshops -->
+  <!-- Workshop Photos -->
   <section id="workshops" class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Workshops</h2>
+        <h2>Workshop Photos</h2>
         <p class="section-subtitle" id="workshops-subtitle"></p>
       </div>
       <div class="cards-grid" id="workshops-list">
@@ -133,23 +134,78 @@
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="section">
-    <div class="container">
-      <div class="section-header">
-        <h2>Testimonials</h2>
-        <p class="section-subtitle" id="testimonials-subtitle"></p>
-      </div>
+  <!-- Testimonials (two parts) -->
+<!-- Testimonials (two parts) -->
+<section id="testimonials" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2>TESTIMONIALS</h2>
+      <p class="section-subtitle">
+        Feedback on Business Studies Text Books and the Objective Type Questions book.
+      </p>
+    </div>
+
+    <!-- Text Books Testimonials -->
+    <div class="testimonial-group">
+      <header class="testimonial-group-header">
+        <h3 class="testimonial-group-title" id="testimonials-books-title"></h3>
+        <p class="testimonial-group-subtitle" id="testimonials-books-subtitle"></p>
+      </header>
 
       <div class="testimonial-slider">
-        <button class="slider-btn prev" aria-label="Previous testimonial">&larr;</button>
-        <div class="testimonial-track" id="testimonial-track">
-          <!-- testimonial cards from JSON -->
+        <button
+          class="slider-btn prev"
+          id="slider-books-prev"
+          aria-label="Previous testimonial (Books)"
+        >
+          &#8592;
+        </button>
+
+        <div class="testimonial-track" id="testimonial-track-books">
+          <!-- filled by JS -->
         </div>
-        <button class="slider-btn next" aria-label="Next testimonial">&rarr;</button>
+
+        <button
+          class="slider-btn next"
+          id="slider-books-next"
+          aria-label="Next testimonial (Books)"
+        >
+          &#8594;
+        </button>
       </div>
     </div>
-  </section>
+
+    <!-- OTQ Book Testimonials -->
+    <div class="testimonial-group">
+      <header class="testimonial-group-header">
+        <h3 class="testimonial-group-title" id="testimonials-otq-title"></h3>
+        <p class="testimonial-group-subtitle" id="testimonials-otq-subtitle"></p>
+      </header>
+
+      <div class="testimonial-slider">
+        <button
+          class="slider-btn prev"
+          id="slider-otq-prev"
+          aria-label="Previous testimonial (OTQ)"
+        >
+          &#8592;
+        </button>
+
+        <div class="testimonial-track" id="testimonial-track-otq">
+          <!-- filled by JS -->
+        </div>
+
+        <button
+          class="slider-btn next"
+          id="slider-otq-next"
+          aria-label="Next testimonial (OTQ)"
+        >
+          &#8594;
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
 
   <!-- Certificates / Photos -->
   <section id="gallery" class="section section-alt">
