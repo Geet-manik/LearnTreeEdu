@@ -106,14 +106,14 @@ function renderWorkshops(workshops) {
 
     const tagsWrap = document.createElement("div");
     tagsWrap.className = "workshop-tags";
-  
+
     (ws.tags || []).forEach((tag) => {
       const chip = document.createElement("span");
       chip.className = "chip";
       chip.textContent = tag;
       tagsWrap.appendChild(chip);
     });
-  
+
     card.appendChild(tagsWrap);
 
     listEl.appendChild(card);
@@ -211,41 +211,20 @@ function renderBooks(books) {
   });
 }
 
-// NEW: two testimonial groups (books + OTQ)
+// Testimonials --------------------------------------------------
+
+// render both groups; actual grid logic lives in setupTestimonialGrid()
 function renderTestimonials(testimonials) {
   // Books testimonials
   $("#testimonials-books-title").textContent = testimonials.booksTitle;
   $("#testimonials-books-subtitle").textContent = testimonials.booksSubtitle;
 
   const booksTrack = $("#testimonial-track-books");
-  booksTrack.innerHTML = "";
-  (testimonials.booksItems || []).forEach((t) => {
-    const card = document.createElement("article");
-    card.className = "testimonial-card";
-
-    const message = document.createElement("p");
-    message.className = "testimonial-message";
-    message.textContent = `“${t.message}”`;
-    card.appendChild(message);
-
-    const author = document.createElement("div");
-    author.className = "testimonial-author";
-    const name = document.createElement("strong");
-    name.textContent = t.name;
-    const role = document.createElement("span");
-    role.textContent = t.role;
-    author.appendChild(name);
-    author.appendChild(role);
-    card.appendChild(author);
-
-    booksTrack.appendChild(card);
-  });
-
-  setupTestimonialSlider(
+  setupTestimonialGrid(
     booksTrack,
     $("#slider-books-prev"),
     $("#slider-books-next"),
-    (testimonials.booksItems || []).length
+    testimonials.booksItems || []
   );
 
   // OTQ testimonials
@@ -253,34 +232,11 @@ function renderTestimonials(testimonials) {
   $("#testimonials-otq-subtitle").textContent = testimonials.otqSubtitle;
 
   const otqTrack = $("#testimonial-track-otq");
-  otqTrack.innerHTML = "";
-  (testimonials.otqItems || []).forEach((t) => {
-    const card = document.createElement("article");
-    card.className = "testimonial-card";
-
-    const message = document.createElement("p");
-    message.className = "testimonial-message";
-    message.textContent = `“${t.message}”`;
-    card.appendChild(message);
-
-    const author = document.createElement("div");
-    author.className = "testimonial-author";
-    const name = document.createElement("strong");
-    name.textContent = t.name;
-    const role = document.createElement("span");
-    role.textContent = t.role;
-    author.appendChild(name);
-    author.appendChild(role);
-    card.appendChild(author);
-
-    otqTrack.appendChild(card);
-  });
-
-  setupTestimonialSlider(
+  setupTestimonialGrid(
     otqTrack,
     $("#slider-otq-prev"),
     $("#slider-otq-next"),
-    (testimonials.otqItems || []).length
+    testimonials.otqItems || []
   );
 }
 
@@ -485,45 +441,63 @@ function closeModal(modal) {
   modal.setAttribute("aria-hidden", "true");
 }
 
-// Testimonial slider (per group) -------------------------------
+// Testimonial grid slider --------------------------------------
 
-function setupTestimonialSlider(track, prevBtn, nextBtn, count) {
-  if (!track || !prevBtn || !nextBtn || count <= 1) {
+// Shows 6 testimonials at a time, then next/prev for next 6
+function setupTestimonialGrid(track, prevBtn, nextBtn, items) {
+  if (!track) return;
+
+  const perPage = 6;
+  const totalItems = items.length;
+  const totalPages = Math.ceil(totalItems / perPage) || 1;
+  let page = 0;
+
+  function renderPage() {
+    track.innerHTML = "";
+    const start = page * perPage;
+    const slice = items.slice(start, start + perPage);
+
+    slice.forEach((t) => {
+      const card = document.createElement("article");
+      card.className = "testimonial-card";
+
+      const message = document.createElement("p");
+      message.className = "testimonial-message";
+      message.textContent = `“${t.message}”`;
+      card.appendChild(message);
+
+      const author = document.createElement("div");
+      author.className = "testimonial-author";
+      const name = document.createElement("strong");
+      name.textContent = t.name;
+      const role = document.createElement("span");
+      role.textContent = t.role;
+      author.appendChild(name);
+      author.appendChild(role);
+      card.appendChild(author);
+
+      track.appendChild(card);
+    });
+  }
+
+  renderPage();
+
+  // If only one page, hide arrows
+  if (!prevBtn || !nextBtn || totalPages <= 1) {
     if (prevBtn) prevBtn.style.display = "none";
     if (nextBtn) nextBtn.style.display = "none";
     return;
   }
 
-  let index = 0;
-
-  function update() {
-    track.style.transform = `translateX(-${index * 100}%)`;
-  }
-
   prevBtn.onclick = () => {
-    index = (index - 1 + count) % count;
-    update();
+    page = (page - 1 + totalPages) % totalPages;
+    renderPage();
   };
 
   nextBtn.onclick = () => {
-    index = (index + 1) % count;
-    update();
+    page = (page + 1) % totalPages;
+    renderPage();
   };
-
-  let timer = setInterval(() => {
-    index = (index + 1) % count;
-    update();
-  }, 7000);
-
-  [track, prevBtn, nextBtn].forEach((el) => {
-    el.addEventListener("mouseenter", () => clearInterval(timer));
-    el.addEventListener("mouseleave", () => {
-      timer = setInterval(() => {
-        index = (index + 1) % count;
-        update();
-      }, 7000);
-    });
-  });
 }
 
 // Scroll reveal ------------------------------------------------

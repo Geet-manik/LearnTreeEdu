@@ -37,6 +37,7 @@
       radial-gradient(circle at bottom right, #f97316 0, transparent 55%),
       var(--clr-bg);
     min-height: 100vh;
+    cursor: pointer;
   }
 
   /* Layout helpers */
@@ -49,7 +50,14 @@
   }
 
   .section {
-    padding: 5rem 0;
+    padding: 4rem 0;
+  }
+  .sections {
+    padding: 4rem 4rem;
+  }
+  .containers
+  {
+    margin: 0;
   }
 
   .section-alt {
@@ -517,179 +525,78 @@
     gap: 0.5rem;
   }
 
-  /* Testimonials */
 
-  /* .testimonial-slider {
-    position: relative;
-    overflow: hidden;
-  }
 
-  .testimonial-track {
-    display: flex;
-    transition: transform 320ms ease-out;
-  }
 
-  .testimonial-card {
-    min-width: 100%;
-    max-width: 100%;
-    padding: 2rem 2.6rem;
-    background: radial-gradient(circle at top, #1d4ed8 0, #020617 55%);
-    border-radius: var(--radius-lg);
-    border: 1px solid rgba(148, 163, 184, 0.3);
-  }
 
-  .testimonial-message {
-    margin: 0 0 1rem;
-    font-size: 0.98rem;
-  }
-
-  .testimonial-author {
-    display: flex;
-    flex-direction: column;
-    gap: 0.2rem;
-    font-size: 0.85rem;
-    color: var(--clr-muted);
-  }
-
-  .slider-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    border-radius: 999px;
-    border: 1px solid rgba(148, 163, 184, 0.6);
-    background: rgba(15, 23, 42, 0.9);
-    color: var(--clr-text);
-    width: 32px;
-    height: 32px;
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-    transition: background var(--transition-fast), transform var(--transition-fast);
-    z-index: 5;
-  }
-
-  .slider-btn:hover {
-    background: rgba(37, 99, 235, 0.8);
-    transform: translateY(-50%) translateY(-1px);
-  }
-
-  .slider-btn.prev {
-    left: 0.2rem;
-  }
-
-  .slider-btn.next {
-    right: 0.2rem;
-  } */
-
-  /* ============================
-   TESTIMONIALS – NEW DESIGN
-============================ */
-
-.testimonial-group {
-  margin-bottom: 3.5rem;
-}
-
-.testimonial-group-header {
-  max-width: 720px;
-  margin: 0 auto 1.5rem;
-  text-align: left;
-}
-
-.testimonial-group-title {
-  margin: 0 0 0.35rem;
-  font-size: 1.2rem;
-  font-weight: 600;
-}
-
-.testimonial-group-subtitle {
-  margin: 0;
-  color: var(--clr-muted);
-  font-size: 0.9rem;
-}
-
-/* Slider wrapper */
-.testimonial-slider {
-  position: relative;
-  max-width: 960px;
-  margin: 0 auto;
-  overflow: hidden;
-  border-radius: var(--radius-lg);
-}
-
-/* Track with slides */
-.testimonial-track {
+.testimonial-group-header{
   display: flex;
-  transition: transform 320ms ease-out;
+  flex-direction: column;
+  width: 100%;
+align-items: center;
+margin-bottom: 5vh;
+}
+.testimonial-slider-group {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 3rem;
 }
 
-/* Individual card */
+.testimonial-frame {
+  width: 100%;
+  overflow: hidden;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 per row */
+  grid-auto-rows: auto;
+  gap: 1rem;
+  transition: transform 0.5s ease-in-out;
+  will-change: transform;
+  width: 100%;
+}
+
 .testimonial-card {
+  border: 1px solid rgba(255,255,255,0.15);
   min-width: 100%;
   max-width: 100%;
   padding: 1.6rem 3.2rem ;
-  background:
-    radial-gradient(circle at top left, rgba(59, 130, 246, 0.6), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.98));
+    background:
+      radial-gradient(circle at top left, rgba(59, 130, 246, 0.6), transparent 55%),
+      radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.9), rgba(15, 23, 42, 0.98));
   border-radius: var(--radius-lg);
   border: 1px solid rgba(148, 163, 184, 0.35);
-  box-shadow: var(--shadow-card);
 }
 
-/* Message text */
-.testimonial-message {
-  margin: 0 0 1.1rem;
-  font-size: 0.98rem;
-  line-height: 1.55;
-}
-
-/* Author block */
-.testimonial-author {
-  display: flex;
-  flex-direction: column;
-  gap: 0.15rem;
-  font-size: 0.85rem;
-  color: var(--clr-muted);
-}
-
-.testimonial-author strong {
-  color: #e5e7eb;
-}
-
-/* Arrow buttons */
 .slider-btn {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+
   border-radius: 999px;
   border: 1px solid rgba(148, 163, 184, 0.6);
-  background: rgba(15, 23, 42, 0.92);
+  background: rgba(15, 23, 42, 0.9);
   color: var(--clr-text);
-  width: 34px;
-  height: 34px;
+  width: 32px;
+  height: 32px;
   display: grid;
   place-items: center;
   cursor: pointer;
-  transition:
-    background var(--transition-fast),
-    transform var(--transition-fast),
-    border-color var(--transition-fast),
-    box-shadow var(--transition-fast);
+  transition: background var(--transition-fast), transform var(--transition-fast);
   z-index: 5;
 }
-
-.slider-btn.prev {
-  left: 0.75rem;
+/* Mobile responsive */
+@media (max-width: 900px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+  }
 }
 
-.slider-btn.next {
-  right: 0.75rem;
-}
-
-.slider-btn:hover {
-  background: rgba(37, 99, 235, 0.9);
-  border-color: rgba(191, 219, 254, 0.9);
-  transform: translateY(-50%) translateY(-1px);
-  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.25);
+@media (max-width: 600px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(1, 1fr); /* 1 per row */
+  }
 }
 
 /* ============================
@@ -983,45 +890,16 @@
     }
   }
 
-  @media (max-width: 900px) {
-    .testimonial-group-header {
-      padding: 0 0.3rem;
-    }
 
-  }
-  
-  @media (max-width: 640px) {
-    .testimonial-group-header {
-      text-align: left;
-    }
-  
-    .testimonial-card {
-      padding: 1.6rem 3rem;
-      border-radius: 14px;
-    }
-  
-    .testimonial-message {
-      font-size: 0.9rem;
-    }
-  
-    .testimonial-author {
-      font-size: 0.8rem;
-    }
-  
-    .slider-btn {
-      width: 30px;
-      height: 30px;
-      top: 45%;
-      bottom: 0.6rem;
-      transform: none;
-    }
-  
-    .slider-btn.prev {
-      left: 0.7rem;
-    }
-  
-    .slider-btn.next {
-      right: 0.7rem;
-    }
-  }
-  
+  .testimonial-card,
+.workshop-card,
+.book-card {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.testimonial-card:hover,
+.workshop-card:hover,
+.book-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.55);
+}

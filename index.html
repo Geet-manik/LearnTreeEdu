@@ -136,8 +136,8 @@
 
   <!-- Testimonials (two parts) -->
 <!-- Testimonials (two parts) -->
-<section id="testimonials" class="section">
-  <div class="container">
+<section id="testimonials" class="sections">
+  <div class="containers">
     <div class="section-header">
       <h2>TESTIMONIALS</h2>
       <p class="section-subtitle">
@@ -152,27 +152,17 @@
         <p class="testimonial-group-subtitle" id="testimonials-books-subtitle"></p>
       </header>
 
-      <div class="testimonial-slider">
-        <button
-          class="slider-btn prev"
-          id="slider-books-prev"
-          aria-label="Previous testimonial (Books)"
-        >
-          &#8592;
-        </button>
+      <div class="testimonial-slider-group">
+        <button id="slider-books-prev" class="slider-btn prev">&#8592;</button>
 
-        <div class="testimonial-track" id="testimonial-track-books">
-          <!-- filled by JS -->
+        <div class="testimonial-frame">
+          <div class="testimonial-grid" id="testimonial-track-books"></div>
         </div>
-
-        <button
-          class="slider-btn next"
-          id="slider-books-next"
-          aria-label="Next testimonial (Books)"
-        >
-          &#8594;
-        </button>
+        
+        <button id="slider-books-next" class="slider-btn next">&#8594;</button>
+        
       </div>
+
     </div>
 
     <!-- OTQ Book Testimonials -->
@@ -182,27 +172,20 @@
         <p class="testimonial-group-subtitle" id="testimonials-otq-subtitle"></p>
       </header>
 
-      <div class="testimonial-slider">
-        <button
-          class="slider-btn prev"
-          id="slider-otq-prev"
-          aria-label="Previous testimonial (OTQ)"
-        >
-          &#8592;
-        </button>
+<div class="testimonial-slider-group">
+  <div class="testimonial-slider-group">
+    <button id="slider-otq-prev" class="slider-btn prev">&#8592;</button>
+  
+    <div class="testimonial-frame">
+      <div class="testimonial-grid" id="testimonial-track-otq"></div>
+    </div>
+  
+    <button id="slider-otq-next" class="slider-btn next">&#8594;</button>
+  </div>
+  
+  
+</div>
 
-        <div class="testimonial-track" id="testimonial-track-otq">
-          <!-- filled by JS -->
-        </div>
-
-        <button
-          class="slider-btn next"
-          id="slider-otq-next"
-          aria-label="Next testimonial (OTQ)"
-        >
-          &#8594;
-        </button>
-      </div>
     </div>
   </div>
 </section>
@@ -211,7 +194,7 @@
   <section id="gallery" class="section section-alt">
     <div class="container">
       <div class="section-header">
-        <h2>Certificates &amp; Photos</h2>
+        <h2>Accolades &amp; Recognitions</h2>
         <p class="section-subtitle" id="gallery-subtitle"></p>
       </div>
 
