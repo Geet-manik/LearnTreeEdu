@@ -197,6 +197,21 @@ function renderBooks(books) {
     buyLink.rel = "noopener noreferrer";
     buyLink.textContent = book.ctaText || "Buy online";
     actions.appendChild(buyLink);
+// WhatsApp Buy Button
+    if (book.whatsappNumber) {
+      const waBtn = document.createElement("a");
+      waBtn.className = "btn btn-success btn-sm"; 
+      waBtn.href =
+      waBtn.href =
+      `https://wa.me/${book.whatsappNumber}?text=` +
+      encodeURIComponent(
+        `Hi, I want to buy the book "${book.title}". Please share payment details.`
+      );
+      waBtn.target = "_blank";
+      waBtn.rel = "noopener noreferrer";
+      waBtn.textContent = "Buy from us";
+      actions.appendChild(waBtn);
+    }
 
     card.appendChild(actions);
     listEl.appendChild(card);
@@ -407,16 +422,35 @@ function openBookModal(book) {
     detailsCol.appendChild(ul);
   }
 
-  const ctaRow = document.createElement("div");
-  ctaRow.style.marginTop = "1rem";
-  const buyBtn = document.createElement("a");
-  buyBtn.href = book.buyUrl;
-  buyBtn.target = "_blank";
-  buyBtn.rel = "noopener noreferrer";
-  buyBtn.className = "btn btn-primary";
-  buyBtn.textContent = book.ctaText || "Buy on Amazon";
-  ctaRow.appendChild(buyBtn);
-  detailsCol.appendChild(ctaRow);
+
+const ctaRow = document.createElement("div");
+ctaRow.className = "book-modal-actions";   
+
+const buyBtn = document.createElement("a");
+buyBtn.href = book.buyUrl;
+buyBtn.target = "_blank";
+buyBtn.rel = "noopener noreferrer";
+buyBtn.className = "btn btn-primary";
+buyBtn.textContent = book.ctaText || "Buy on Amazon";
+ctaRow.appendChild(buyBtn);
+
+
+if (book.whatsappNumber) {
+  const waBtn = document.createElement("a");
+  waBtn.className = "btn btn-success"; 
+  waBtn.href =
+    `https://wa.me/${book.whatsappNumber}?text=` +
+    encodeURIComponent(
+      `Hi, I want to buy the book "${book.title}". Please share payment details.`
+    );
+  waBtn.target = "_blank";
+  waBtn.rel = "noopener noreferrer";
+  waBtn.textContent = "Buy from us";
+  ctaRow.appendChild(waBtn);
+}
+
+detailsCol.appendChild(ctaRow);
+
 
   layout.appendChild(detailsCol);
   content.appendChild(layout);
