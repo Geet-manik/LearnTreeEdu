@@ -156,8 +156,27 @@
           "Ms Sumathy Raghunath, HOD Commerce, Cambridge School, Noida, U.P.",
           "Ms Varsha Khajanchi, Manav Rachna International School, Faridabad"
         ],
-        "buyUrl": "https://amzn.in/d/4gXBuSB",
-        "ctaText": "Buy on Amazon",
+        "buyOptions": [
+          {
+            "label": "Buy on Amazon",
+            "type": "external",
+            "url": "https://amzn.in/d/4gXBuSB",
+            "style": "primary"
+          },
+          {
+            "label": "Buy from Meritbox",
+            "type": "external",
+            "url": "https://meritbox.app/books/a-textbook-of-business-studies-for-class-xii",
+            "style": "outline"
+          },
+          {
+            "label": "Buy from Us (Free Shipping)",
+            "type": "whatsapp",
+            "number": "919810003854",
+            "style": "success"
+          }
+        ],
+        
         "whatsappNumber": "919810003854"
 
       }

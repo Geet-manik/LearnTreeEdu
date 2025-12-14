@@ -189,40 +189,68 @@ function renderBooks(books) {
     info.appendChild(metaRow);
     card.appendChild(info);
 
-    // Actions
-    const actions = document.createElement("div");
-    actions.className = "book-actions";
+//     // Actions
+//     const actions = document.createElement("div");
+//     actions.className = "book-actions";
 
-    const detailsBtn = document.createElement("button");
-    detailsBtn.className = "btn btn-outline btn-sm";
-    detailsBtn.textContent = "View details";
-    detailsBtn.addEventListener("click", () => openBookModal(book));
-    actions.appendChild(detailsBtn);
+//     const detailsBtn = document.createElement("button");
+//     detailsBtn.className = "btn btn-outline btn-sm";
+//     detailsBtn.textContent = "View details";
+//     detailsBtn.addEventListener("click", () => openBookModal(book));
+//     actions.appendChild(detailsBtn);
 
-    const buyLink = document.createElement("a");
-    buyLink.className = "btn btn-primary btn-sm";
-    buyLink.href = book.buyUrl;
-    buyLink.target = "_blank";
-    buyLink.rel = "noopener noreferrer";
-    buyLink.textContent = book.ctaText || "Buy online";
-    actions.appendChild(buyLink);
-// WhatsApp Buy Button
-    if (book.whatsappNumber) {
-      const waBtn = document.createElement("a");
-      waBtn.className = "btn btn-success btn-sm"; 
-      waBtn.href =
-      waBtn.href =
-      `https://wa.me/${book.whatsappNumber}?text=` +
-      encodeURIComponent(
-        `Hi, I want to buy the book "${book.title}". Please share payment details.`
-      );
-      waBtn.target = "_blank";
-      waBtn.rel = "noopener noreferrer";
-      waBtn.textContent = "Buy from us";
-      actions.appendChild(waBtn);
-    }
+//     const buyLink = document.createElement("a");
+//     buyLink.className = "btn btn-primary btn-sm";
+//     buyLink.href = book.buyUrl;
+//     buyLink.target = "_blank";
+//     buyLink.rel = "noopener noreferrer";
+//     buyLink.textContent = book.ctaText || "Buy online";
+//     actions.appendChild(buyLink);
+// // WhatsApp Buy Button
+//     if (book.whatsappNumber) {
+//       const waBtn = document.createElement("a");
+//       waBtn.className = "btn btn-success btn-sm"; 
+//       waBtn.href =
+//       waBtn.href =
+//       `https://wa.me/${book.whatsappNumber}?text=` +
+//       encodeURIComponent(
+//         `Hi, I want to buy the book "${book.title}". Please share payment details.`
+//       );
+//       waBtn.target = "_blank";
+//       waBtn.rel = "noopener noreferrer";
+//       waBtn.textContent = "Buy from us";
+//       actions.appendChild(waBtn);
+//     }
 
-    card.appendChild(actions);
+//     card.appendChild(actions);
+//     // Actions
+const actions = document.createElement("div");
+actions.className = "book-actions";
+
+(book.buyOptions || []).forEach((opt) => {
+  const btn = document.createElement("a");
+  btn.className = `btn btn-${opt.style || "outline"} btn-sm`;
+
+  if (opt.type === "external") {
+    btn.href = opt.url;
+    btn.target = "_blank";
+    btn.rel = "noopener noreferrer";
+  }
+
+  if (opt.type === "whatsapp") {
+    btn.href =
+      `https://wa.me/${opt.number}?text=` +
+      encodeURIComponent(opt.message || `Hi, I want to buy "${book.title}".`);
+    btn.target = "_blank";
+    btn.rel = "noopener noreferrer";
+  }
+
+  btn.textContent = opt.label;
+  actions.appendChild(btn);
+});
+
+card.appendChild(actions);
+
     listEl.appendChild(card);
 
     // Use first book for hero
@@ -432,31 +460,58 @@ function openBookModal(book) {
   }
 
 
+// const ctaRow = document.createElement("div");
+// ctaRow.className = "book-modal-actions";   
+
+// const buyBtn = document.createElement("a");
+// buyBtn.href = book.buyUrl;
+// buyBtn.target = "_blank";
+// buyBtn.rel = "noopener noreferrer";
+// buyBtn.className = "btn btn-primary";
+// buyBtn.textContent = book.ctaText || "Buy on Amazon";
+// ctaRow.appendChild(buyBtn);
+
+
+// if (book.whatsappNumber) {
+//   const waBtn = document.createElement("a");
+//   waBtn.className = "btn btn-success"; 
+//   waBtn.href =
+//     `https://wa.me/${book.whatsappNumber}?text=` +
+//     encodeURIComponent(
+//       `Hi, I want to buy the book "${book.title}". Please share payment details.`
+//     );
+//   waBtn.target = "_blank";
+//   waBtn.rel = "noopener noreferrer";
+//   waBtn.textContent = "Buy from us";
+//   ctaRow.appendChild(waBtn);
+// }
+
+// detailsCol.appendChild(ctaRow);
+
 const ctaRow = document.createElement("div");
-ctaRow.className = "book-modal-actions";   
+ctaRow.className = "book-modal-actions";
 
-const buyBtn = document.createElement("a");
-buyBtn.href = book.buyUrl;
-buyBtn.target = "_blank";
-buyBtn.rel = "noopener noreferrer";
-buyBtn.className = "btn btn-primary";
-buyBtn.textContent = book.ctaText || "Buy on Amazon";
-ctaRow.appendChild(buyBtn);
+(book.buyOptions || []).forEach((opt) => {
+  const btn = document.createElement("a");
+  btn.className = `btn btn-${opt.style || "outline"}`;
 
+  if (opt.type === "external") {
+    btn.href = opt.url;
+    btn.target = "_blank";
+    btn.rel = "noopener noreferrer";
+  }
 
-if (book.whatsappNumber) {
-  const waBtn = document.createElement("a");
-  waBtn.className = "btn btn-success"; 
-  waBtn.href =
-    `https://wa.me/${book.whatsappNumber}?text=` +
-    encodeURIComponent(
-      `Hi, I want to buy the book "${book.title}". Please share payment details.`
-    );
-  waBtn.target = "_blank";
-  waBtn.rel = "noopener noreferrer";
-  waBtn.textContent = "Buy from us";
-  ctaRow.appendChild(waBtn);
-}
+  if (opt.type === "whatsapp") {
+    btn.href =
+      `https://wa.me/${opt.number}?text=` +
+      encodeURIComponent(`Hi, I want to buy "${book.title}".Please share payment details`);
+    btn.target = "_blank";
+    btn.rel = "noopener noreferrer";
+  }
+
+  btn.textContent = opt.label;
+  ctaRow.appendChild(btn);
+});
 
 detailsCol.appendChild(ctaRow);
 
