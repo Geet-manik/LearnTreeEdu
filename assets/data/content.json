@@ -182,7 +182,29 @@
       }
     ]
   },
-
+  "papers": {
+    "title": "CBSE Question Papers & Sample Papers",
+    "subtitle": "Official CBSE resources for Business Studies Class XII.",
+    "items": [
+      {
+        "category": "CBSE Question Papers",
+        "description": "Previous Years’ Question Papers (Annual + Compartment)",
+        "year": "2022 to 2025",
+        "subject": "Business Studies – Class XII",
+        "url": "https://www.cbse.gov.in/cbsenew/question-paper.html",
+        "type": "Official CBSE"
+      },
+      {
+        "category": "CBSE Sample Papers",
+        "description": "Sample Papers with Marking Scheme",
+        "year": "2014-15 to 2025-26",
+        "subject": "Business Studies – Class XII",
+        "url": "https://cbseacademic.nic.in/sqp_archive.html",
+        "type": "Official CBSE"
+      }
+    ]
+  },
+  
   "testimonials": {
     "booksTitle": "Testimonials – Text Books on Business Studies",
     "booksSubtitle": "What teachers and students say about the core Business Studies textbooks.",

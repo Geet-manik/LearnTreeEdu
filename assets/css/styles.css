@@ -962,3 +962,34 @@ margin-bottom: 5vh;
   margin-bottom: 0.5rem;
   color: var(--clr-text);
 }
+
+
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.paper-card h3 {
+  margin: 0 0 0.3rem;
+}
+
+.paper-subject {
+  font-size: 0.85rem;
+  color: var(--clr-muted);
+  margin-bottom: 0.4rem;
+}
+
+.paper-meta {
+  display: flex;
+  gap: 0.6rem;
+  font-size: 0.75rem;
+  color: var(--clr-muted);
+  margin: 0.6rem 0 0.9rem;
+}
+
+.paper-meta span {
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+}

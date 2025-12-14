@@ -658,6 +658,52 @@ function setupModalClosers() {
     });
   });
 }
+function renderPapers(papers) {
+  if (!papers) return;
+
+  $("#papers-title").textContent = papers.title;
+  $("#papers-subtitle").textContent = papers.subtitle;
+
+  const grid = $("#papers-grid");
+  grid.innerHTML = "";
+
+  (papers.items || []).forEach((item) => {
+    const card = document.createElement("article");
+    card.className = "card paper-card reveal";
+
+    const category = document.createElement("h3");
+    category.textContent = item.category;
+    card.appendChild(category);
+
+    const subject = document.createElement("p");
+    subject.className = "paper-subject";
+    subject.textContent = item.subject;
+    card.appendChild(subject);
+
+    const desc = document.createElement("p");
+    desc.textContent = item.description;
+    card.appendChild(desc);
+
+    const meta = document.createElement("div");
+    meta.className = "paper-meta";
+    meta.innerHTML = `
+      <span>${item.year}</span>
+      <span>${item.type}</span>
+    `;
+    card.appendChild(meta);
+
+    const link = document.createElement("a");
+    link.href = item.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.className = "btn btn-outline btn-sm";
+    link.textContent = "View Papers";
+    card.appendChild(link);
+
+    grid.appendChild(card);
+  });
+}
+
 
 // Init --------------------------------------------------------
 
@@ -673,6 +719,7 @@ async function init() {
     // renderGallery(data.gallery);
     renderLinks(data.links);
     renderFooter(data.site, data.footer);
+    renderPapers(data.papers);
 
     setupNavToggle();
     setupModalClosers();
