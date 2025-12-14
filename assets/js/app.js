@@ -99,9 +99,6 @@ function renderWorkshops(workshops) {
     h3.textContent = ws.title;
     card.appendChild(h3);
 
-    const p = document.createElement("p");
-    p.textContent = ws.description;
-    card.appendChild(p);
 
     const meta = document.createElement("div");
     meta.className = "workshop-meta";

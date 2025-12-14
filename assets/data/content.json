@@ -48,62 +48,186 @@
 
     "workshops": {
       "subtitle": "Glimpses from teacher trainings, student workshops and author interactions across schools.",
-      "items": [
+     
+      "items":[
         {
-          "title": "Inservice Teachers’ Training for KVs",
-          "description": "Sessions with KV commerce teachers focused on practical classroom implementation of Business Studies pedagogy.",
-          "dateLabel": "Multiple batches",
-          "location": "Kendriya Vidyalayas",
-          "image": "assets/img/workshops/in-service-teachers-training-for-kvs.jpg",
-          "tags": ["Teacher Training", "KVs"]
+          "title": "Inservice Teachers’ Training for Kendriya School Teachers",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "Gurugram, Haryana",
+          "image": "assets/img/workshops/Inservice-Teachers-Training-KV-Gurugram.jpg",
+          "tags": [
+            "KV Teachers",
+            "Business Studies"
+          ]
         },
         {
-          "title": "Students’ Workshop – G.D. Goenka, Gurugram",
-          "description": "Interactive workshop on scoring high in Business Studies with focus on case-based and objective type questions.",
-          "dateLabel": "Session highlight",
-          "location": "G.D. Goenka, Gurugram",
-          "image": "assets/img/workshops/students-workshop-gd-goenka-gurugram.jpg",
-          "tags": ["Students", "Boards", "CUET"]
+          "title": "Judge & Guest at DPS",
+          "description": "Invited as Judge and Guest Speaker for academic activities and evaluation sessions at Delhi Public School.",
+          "dateLabel": "Guest Appearance",        
+          "location": "Ghaziabad, Utter Pradesh",
+          "image": "assets/img/workshops/Judge_Guest_at_DPS.jpg",
+          "tags": [
+            "Guest Speaker",
+            "Judge",
+            "DPS"        
+          ]
         },
         {
-          "title": "Teachers’ Workshop – DAV Schools",
-          "description": "Pan-DAV workshop with over 80 commerce teachers on competency-based questions and evaluation.",
-          "dateLabel": "80 teachers",
-          "location": "DAV Schools",
-          "image": "assets/img/workshops/teachers-workshop-dav-schools.jpg",
-          "tags": ["Teachers", "CBSE", "Training"]
+          "title": "Teachers Workshop at SD Memorial",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "Gurugram, Haryana",
+          "image": "assets/img/workshops/Teachers-Workshop-SD-Memorial.jpg",
+          "tags": [
+            "Workshop",
+            "Business Studies"
+          ]
         },
         {
-          "title": "Students’ Workshop – Manav Rachna International",
-          "description": "Exam strategy and Business Studies concept clarity session using LTE resources.",
-          "dateLabel": "Student programme",
-          "location": "Manav Rachna International School",
-          "image": "assets/img/workshops/students-workshop-manav-rachna-international.jpg",
-          "tags": ["Workshops", "Students"]
+          "title": "Students Workshop Father Agnel School",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": " New Delhi",
+          "image": "assets/img/workshops/Students-Workshop-Father-Agnel-School.jpg",
+          "tags": [
+            "Workshop",
+            "Business Studies"
+          ]
         },
         {
-          "title": "Students’ Workshop – Army Public School, Shanker Vihar",
-          "description": "Engaging OTQ and case-based practice session for senior secondary students.",
-          "dateLabel": "Workshop session",
-          "location": "Army Public School, Shanker Vihar",
-          "image": "assets/img/workshops/students-workshop-aps-shanker-vihar.jpg",
-          "tags": ["Students", "CBSE"]
+          "title": "Teachers’ Workshop at Jaipur, RajasThan",
+          "description": "Workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "Jaipur, RajasThan",
+          "image": "assets/img/workshops/Teacher-wprkshop-at-jaipur.jpg",
+          "tags": [
+            "Workshop",
+            "Business Studies"
+          ]
         },
         {
-          "title": "Students’ Workshop – St. Anslem Jaipur",
-          "description": "Interactive session with Business Studies students emphasizing concept clarity.",
-          "dateLabel": "Workshop",
-          "location": "St. Anslem Jaipur",
-          "image": "assets/img/workshops/students-workshop-st-anslem-jaipur.jpg",
-          "tags": ["Students", "Workshops"]
+          "title": "Teachers’ Workshop at Kochi (Kerala) ",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "Kochi (Kerala)",
+          "image": "assets/img/workshops/Teachers-Workshop-kerala.jpg",
+          "tags": [
+            "150 teachers attended",
+            "Business Studies"
+          ]
         },
         {
-          "title": "Students’ Workshop – Salwan Public School, Gurugram",
-          "description": "Focused OTQ practice, feedback, and exam preparation session.",
-          "dateLabel": "Workshop",
-          "location": "Salwan Public School, Gurugram",
-          "image": "assets/img/workshops/students-workshop-salwan-public-school-gurugram.jpg",
-          "tags": ["Students", "CBSE"]
+          "title": "Teachers Workshop SCERT ",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "New Delhi",
+          "image": "assets/img/workshops/Teachers-Workshop-SCERT.jpg",
+          "tags": [
+            "Trained 80 teachers",
+            "Business Studies"
+          ]
+        },
+        {
+          "title": "Teachers’ Workshop at DPS Greater Faridabad",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "Greater Faridabad, Haryana",
+          "image": "assets/img/workshops/Teachers-Workshop-Public-School-Faridabad.jpg",
+          "tags": [
+            "Workshop",
+            "Business Studies"
+          ]
+        },
+    
+        {
+          "title": "Judge & Guest at Ryan International ",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Guest Appearance",        
+          "location": "Mayur Vihar, New Delhi",
+          "image": "assets/img/workshops/Guest-at-Ryan-International.jpg",
+          "tags": [
+            "Guest Speaker",
+            "Judge"
+          ]
+        },
+        {
+          "title": "Judge & Guest at Ryan International ",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Guest Appearance",        
+          "location": "Mayur Vihar, New Delhi",
+          "image": "assets/img/workshops/Guest-at-Ryan-International-2.jpg",
+          "tags": [
+            "Guest Speaker",
+            "Judge"
+          ]
+        },
+        {
+          "title": "Judge & Chief Guest at  ITL Dwarka",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Guest Appearance",        
+          "location": "New Delhi",
+          "image": "assets/img/workshops/Ex-CBSE-Chairman-Vineet-Joshi.jpg",
+          "tags": [
+            "Guest Speaker",
+            "Judge",
+            "Ex-CBSE-Chairman"
+          ]
+        },
+        {
+          "title": "Teachers’ Workshop at DAV School Rohini ",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "Rohini, New Delhi",
+          "image": "assets/img/workshops/Teachers-Workshop-Delhi-Public-School-Rohini.jpg",
+          "tags": [
+            "Workshop",
+            "80 teachers attended"
+          ]
+        },
+        {
+          "title": "Students Workshop at St. Anslem School",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "Jaipur, Rajasthan",
+          "image": "assets/img/workshops/Students-Workshop-Anslem.jpg",
+          "tags": [
+            "Workshop",
+            "Business Studies"
+          ]
+        },
+        {
+          "title": "Students’ Workshop at Amity Internatioinal",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "Gurugram, Haryana",
+          "image": "assets/img/workshops/Student-Workshop-Amity.jpg",
+          "tags": [
+            "Workshop",
+            "Business Studies"
+          ]
+        },
+        {
+          "title": "Students’ Workshop at St. Marks School",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "Meera Bagh, New Delhi",
+          "image": "assets/img/workshops/Students-Workshop-Marks-School.jpg",
+          "tags": [
+            "Workshop",
+            "Business Studies"
+          ]
+        },
+        {
+          "title": "Students’ Workshop at Bhatnagar International School",
+          "description": "Interactive academic workshop session.",
+          "dateLabel": "Workshop Session",
+          "location": "Paschim Vihar, New Delhi",
+          "image": "assets/img/workshops/Students-Workshop-Bhatnagar-School-Delhi.jpg",
+          "tags": [
+            "Workshop",
+            "Business Studies"
+          ]
         }
       ]
     },
@@ -390,3 +514,5 @@
     "email": " 21rmahajan@gmail.com"
   }
 }
+
+
