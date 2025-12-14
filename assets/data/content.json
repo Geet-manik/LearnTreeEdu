@@ -12,7 +12,7 @@
     "navItems": [
       { "label": "About", "target": "about" },
       { "label": "Workshop Photos", "target": "workshops" },
-      { "label": "Books", "target": "books" },
+      { "label": "Books & Pappers", "target": "books" },
       { "label": "Testimonials", "target": "testimonials" },
       { "label": "Accolades & Recognitions", "target": "gallery" },
     
