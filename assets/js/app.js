@@ -37,12 +37,21 @@ function renderSiteMeta(site) {
   (site.navItems || []).forEach((nav) => {
     const li = document.createElement("li");
     const a = document.createElement("a");
-    a.href = `#${nav.target}`;
     a.textContent = nav.label;
-    a.addEventListener("click", () => closeMobileNav());
+  
+    if (nav.external && nav.url) {
+      a.href = nav.url;
+      a.target = "_blank";
+      a.rel = "noopener noreferrer";
+    } else {
+      a.href = `#${nav.target}`;
+      a.addEventListener("click", () => closeMobileNav());
+    }
+  
     li.appendChild(a);
     navLinksEl.appendChild(li);
   });
+  
 }
 
 function renderAbout(about) {
@@ -476,19 +485,24 @@ function closeModal(modal) {
 }
 
 // Testimonial grid slider --------------------------------------
+function getTestimonialsPerPage() {
+  const w = window.innerWidth;
+
+  if (w >= 1024) return 6;   // Desktop
+  if (w >= 768) return 4;    // Tablet
+  return 1;                 // Mobile
+}
 
 // Shows 6 testimonials at a time, then next/prev for next 6
 function setupTestimonialGrid(track, prevBtn, nextBtn, items) {
   if (!track) return;
 
-  const perPage = window.innerWidth < 640 ? 1 : 6;
-
-  const totalItems = items.length;
-  const totalPages = Math.ceil(totalItems / perPage) || 1;
+  let perPage = getTestimonialsPerPage();
   let page = 0;
 
   function renderPage() {
     track.innerHTML = "";
+
     const start = page * perPage;
     const slice = items.slice(start, start + perPage);
 
@@ -496,20 +510,13 @@ function setupTestimonialGrid(track, prevBtn, nextBtn, items) {
       const card = document.createElement("article");
       card.className = "testimonial-card";
 
-      const message = document.createElement("p");
-      message.className = "testimonial-message";
-      message.textContent = `“${t.message}”`;
-      card.appendChild(message);
-
-      const author = document.createElement("div");
-      author.className = "testimonial-author";
-      const name = document.createElement("strong");
-      name.textContent = t.name;
-      const role = document.createElement("span");
-      role.textContent = t.role;
-      author.appendChild(name);
-      author.appendChild(role);
-      card.appendChild(author);
+      card.innerHTML = `
+        <p class="testimonial-message">“${t.message}”</p>
+        <div class="testimonial-author">
+          <strong>${t.name}</strong>
+          <span>${t.role}</span>
+        </div>
+      `;
 
       track.appendChild(card);
     });
@@ -517,23 +524,28 @@ function setupTestimonialGrid(track, prevBtn, nextBtn, items) {
 
   renderPage();
 
-  // If only one page, hide arrows
-  if (!prevBtn || !nextBtn || totalPages <= 1) {
-    if (prevBtn) prevBtn.style.display = "none";
-    if (nextBtn) nextBtn.style.display = "none";
-    return;
-  }
+  const totalPages = () => Math.ceil(items.length / perPage);
 
   prevBtn.onclick = () => {
-    page = (page - 1 + totalPages) % totalPages;
+    page = (page - 1 + totalPages()) % totalPages();
     renderPage();
   };
 
   nextBtn.onclick = () => {
-    page = (page + 1) % totalPages;
+    page = (page + 1) % totalPages();
     renderPage();
   };
+
+  window.addEventListener("resize", () => {
+    const newPerPage = getTestimonialsPerPage();
+    if (newPerPage !== perPage) {
+      perPage = newPerPage;
+      page = 0;
+      renderPage();
+    }
+  });
 }
+
 
 // Scroll reveal ------------------------------------------------
 

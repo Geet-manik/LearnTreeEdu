@@ -50,10 +50,10 @@
   }
 
   .section {
-    padding: 4rem 0;
+    padding: 5rem 0;
   }
   .sections {
-    padding: 4rem 4rem;
+    padding: 5rem 4rem;
   }
   .containers
   {
@@ -167,8 +167,10 @@
     color: var(--clr-muted);
     padding: 0.4rem 0.7rem;
     border-radius: 999px;
+    white-space: nowrap;
     transition: color var(--transition-fast), background var(--transition-fast),
       transform var(--transition-fast);
+      
   }
 
   .nav-links a:hover,
@@ -600,7 +602,7 @@ margin-bottom: 5vh;
 /* Mobile testimonial readability */
 @media (max-width: 600px) {
   .sections{
-    padding: 1.5rem;
+    padding: 5rem 1.5rem;
   }
   .testimonial-card {
     padding: 1.1rem 1.2rem;
@@ -887,7 +889,7 @@ margin-bottom: 5vh;
     }
   }
 
-  @media (max-width: 900px) {
+  @media (max-width: 1300px) {
     .nav-toggle {
       display: block;
     }
