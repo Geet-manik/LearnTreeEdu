@@ -125,6 +125,54 @@ function renderWorkshops(workshops) {
     listEl.appendChild(card);
   });
 }
+function setupFlipbook(flipbook) {
+  if (!flipbook) return;
+
+  const imgEl = document.getElementById("flipbook-page");
+  const overlay = document.getElementById("flipbook-overlay");
+  const prevBtn = document.getElementById("flip-prev");
+  const nextBtn = document.getElementById("flip-next");
+
+  const amazonBtn = document.getElementById("flip-buy-amazon");
+  const waBtn = document.getElementById("flip-buy-whatsapp");
+
+  let index = 0;
+  const pages = flipbook.pages;
+  const limit = flipbook.previewLimit;
+
+  function render() {
+    imgEl.src = pages[index];
+
+    if (index >= limit - 1) {
+      overlay.classList.remove("hidden");
+    } else {
+      overlay.classList.add("hidden");
+    }
+  }
+
+  prevBtn.onclick = () => {
+    if (index > 0) {
+      index--;
+      render();
+    }
+  };
+
+  nextBtn.onclick = () => {
+    if (index < pages.length - 1) {
+      index++;
+      render();
+    }
+  };
+
+  amazonBtn.href = flipbook.buyAmazon;
+  waBtn.href =
+    `https://wa.me/${flipbook.whatsappNumber}?text=` +
+    encodeURIComponent(
+      `Hi, I want to buy "${flipbook.title}". Please share payment details. (Available discounts with free shipping)`
+    );
+
+  render();
+}
 
 function renderBooks(books) {
   $("#books-subtitle").textContent = books.subtitle;
@@ -713,6 +761,8 @@ async function init() {
     renderWorkshops(data.workshops);
     renderBooks(data.books);
     renderTestimonials(data.testimonials);
+    setupFlipbook(data.flipbooks);
+
     // renderGallery(data.gallery);
     renderLinks(data.links);
     renderFooter(data.site, data.footer);
