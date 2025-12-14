@@ -255,41 +255,41 @@ function renderTestimonials(testimonials) {
   );
 }
 
-function renderGallery(gallery) {
-  $("#gallery-subtitle").textContent = gallery.subtitle;
-  const grid = $("#gallery-grid");
-  grid.innerHTML = "";
+// function renderGallery(gallery) {
+//   $("#gallery-subtitle").textContent = gallery.subtitle;
+//   const grid = $("#gallery-grid");
+//   grid.innerHTML = "";
 
-  (gallery.items || []).forEach((item) => {
-    const tile = document.createElement("article");
-    tile.className = "gallery-item reveal";
+//   (gallery.items || []).forEach((item) => {
+//     const tile = document.createElement("article");
+//     tile.className = "gallery-item reveal";
 
-    const img = document.createElement("img");
-    img.src = item.image;
-    img.alt = item.title;
+//     const img = document.createElement("img");
+//     img.src = item.image;
+//     img.alt = item.title;
 
-    const overlay = document.createElement("div");
-    overlay.className = "gallery-item-overlay";
+//     const overlay = document.createElement("div");
+//     overlay.className = "gallery-item-overlay";
 
-    const title = document.createElement("div");
-    title.className = "gallery-item-title";
-    title.textContent = item.title;
+//     const title = document.createElement("div");
+//     title.className = "gallery-item-title";
+//     title.textContent = item.title;
 
-    const caption = document.createElement("div");
-    caption.className = "gallery-item-caption";
-    caption.textContent = item.caption;
+//     const caption = document.createElement("div");
+//     caption.className = "gallery-item-caption";
+//     caption.textContent = item.caption;
 
-    overlay.appendChild(title);
-    overlay.appendChild(caption);
+//     overlay.appendChild(title);
+//     overlay.appendChild(caption);
 
-    tile.appendChild(img);
-    tile.appendChild(overlay);
+//     tile.appendChild(img);
+//     tile.appendChild(overlay);
 
-    tile.addEventListener("click", () => openLightbox(item.image, item.caption));
+//     tile.addEventListener("click", () => openLightbox(item.image, item.caption));
 
-    grid.appendChild(tile);
-  });
-}
+//     grid.appendChild(tile);
+//   });
+// }
 
 function renderLinks(links) {
   $("#links-subtitle").textContent = links.subtitle;
@@ -481,7 +481,8 @@ function closeModal(modal) {
 function setupTestimonialGrid(track, prevBtn, nextBtn, items) {
   if (!track) return;
 
-  const perPage = 6;
+  const perPage = window.innerWidth < 640 ? 1 : 6;
+
   const totalItems = items.length;
   const totalPages = Math.ceil(totalItems / perPage) || 1;
   let page = 0;
@@ -602,7 +603,7 @@ async function init() {
     renderWorkshops(data.workshops);
     renderBooks(data.books);
     renderTestimonials(data.testimonials);
-    renderGallery(data.gallery);
+    // renderGallery(data.gallery);
     renderLinks(data.links);
     renderFooter(data.site, data.footer);
 

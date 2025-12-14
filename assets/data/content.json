@@ -14,8 +14,8 @@
       { "label": "Workshop Photos", "target": "workshops" },
       { "label": "Books", "target": "books" },
       { "label": "Testimonials", "target": "testimonials" },
-      { "label": "Certificates & Photos", "target": "gallery" },
-      { "label": "Links", "target": "links" }
+      { "label": "Accolades & Recognitions", "target": "gallery" },
+      { "label": "Contact Us", "target": "links" }
     ]
   },
 
@@ -33,7 +33,7 @@
       "contacts": [
         { "type": "Phone", "value": "9810003854" },
         { "type": "Office", "value": "Site – 1/215, Vikas Puri, New Delhi – 110018" },
-        { "type": "Email", "value": "care.lte2020@gmail.com" }
+        { "type": "Email", "value": " 21rmahajan@gmail.com" }
       ]
     }
   },
@@ -161,37 +161,37 @@
     "booksSubtitle": "What teachers and students say about the core Business Studies textbooks.",
     "booksItems": [
       {
-        "name": "Ms Santvana Charuvedi",
+        "name": "Ms Santvana Charuvedi ",
         "role": "MKGM School, Gujarat",
         "message": "Hearty congratulations Mahajan Sirji. You are a very dedicated, hardworking, caring and focused author who takes care of all aspects and current updates. Perfection is one word that defines your work. I feel blessed to be associated with you and foresee many more such moments of pride and honour."
       },
       {
-        "name": "Mr Rajesh Kumar",
+        "name": "Mr Rajesh Kumar ",
         "role": "SB Vidyalaya, Pitam Pura, New Delhi",
         "message": "I have received specimen copy of Business Studies by R.K. Mahajan Sir and gone through it. Excellent book in all aspects. 5* for Mahajan Sir. Please bring Hindi medium also so that students of government schools can get the benefit of your hard work."
       },
       {
-        "name": "Dr Vikas Vijay",
+        "name": "Dr Vikas Vijay ",
         "role": "Formerly PGT (Commerce), New Era Public School, Maya Puri, New Delhi",
         "message": "I know Mr Rajesh Kumar Mahajan from last five years. He has a different fire and spark. Apart from having an ace command over the subject he is an emotional, honest and sincere person. His Business Studies book is a master stroke – teacher-student friendly, with strong content and style of writing."
       },
       {
-        "name": "Mr Piyush R. Mehta",
+        "name": "Mr Piyush R. Mehta ",
         "role": "Vice Principal, G-Kids School, Jodhpur (Rajasthan)",
         "message": "Your Business Studies books for Classes XI and XII appealed to me a lot. Simple language and use of pictures at various places make topics interesting and easy to understand. You have made right use of the maxim ‘A picture is worth a thousand words’."
       },
       {
-        "name": "Ms Surabhi Sinha",
+        "name": "Ms Surabhi Sinha ",
         "role": "PGT (Commerce), Mother’s Global School, Preet Vihar, New Delhi",
         "message": "Your books are complete in all aspects – good for both teachers and students. Lessons are planned in a very systematic way. Value based questions and very short answer questions cover everything. Addendum contains good case studies. Class XI book is excellent – simple language, systematic progress and different categories of questions covering the whole chapter."
       },
       {
-        "name": "Ms Arti Chopra",
+        "name": "Ms Arti Chopra ",
         "role": "PGT (Commerce), Ryan International School, Mayur Vihar, New Delhi",
         "message": "I wholeheartedly congratulate Mr Rajesh Kumar Mahajan for Business Studies books which present various concepts in simplified manner with day-to-day examples. Content is sufficient, questions and suggested answers are appreciable and especially helpful for government school students where language is a barrier."
       },
       {
-        "name": "Ms Madhumita Saha",
+        "name": "Ms Madhumita Saha ",
         "role": "DPS Mathura Road, New Delhi",
         "message": "The books cover all topics in a clear and structured manner with a good range of question typologies. They are extremely helpful for classroom teaching as well as exam preparation and will soon become best sellers among Business Studies resources."
       }
@@ -201,52 +201,52 @@
     "otqSubtitle": "Feedback specifically for the ‘Objective Type Questions on Business Studies – Class XII’ book.",
     "otqItems": [
       {
-        "name": "Leena Arora",
+        "name": "Leena Arora ",
         "role": "DAV Ashok Vihar, New Delhi",
         "message": "This book shows how you have made things easier for students in Business Studies. Your resolute efforts call for great appreciation. You are a true educationist, sir. Hats off to your spirit."
       },
       {
-        "name": "Suman Khanna",
+        "name": "Suman Khanna ",
         "role": "HOD Commerce, Ramjas School R.K. Puram, New Delhi",
         "message": "Received the specimen copy of your book on OTQs and found it immensely useful for students. It will enhance the speed of answering OTQs and help them score more than 20 marks. Recommended to my students and in the official book list – a very good purchase for concept building, clarity and revision."
       },
       {
-        "name": "Ms Meenakshi Deewan",
+        "name": "Ms Meenakshi Deewan ",
         "role": "Ramjas School, Pusa Road, New Delhi",
         "message": "We have recommended your OTQ book to our students and plan to add it to the official book list. It is a complete material on which we can blindly rely for board preparation."
       },
       {
-        "name": "Ms Mamta Srivastava",
+        "name": "Ms Mamta Srivastava ",
         "role": "PGT (Commerce), Delhi Public School, Mathura Road, New Delhi",
         "message": "This book is just what I was looking for. A great way to quickly understand the Class XII syllabus with a large variety of OTQs as per latest CBSE pattern. Students can first understand the chapter from this book and then revise from NCERT."
       },
       {
-        "name": "Ms Neena Batra",
+        "name": "Ms Neena Batra ",
         "role": "DAV School, Amritsar, Punjab",
         "message": "OTQs on Business Studies cover all types of questions chapter-wise according to NCERT syllabus and help students revise full syllabus. By doing these, students can score full marks in board exams. All teachers should recommend this book."
       },
       {
-        "name": "Ms Sangeeta Vashisth",
+        "name": "Ms Sangeeta Vashisth ",
         "role": "HOD Commerce, The Mann School, New Delhi",
         "message": "The specimen OTQ book is wonderful – all varieties of MCQs students need to practise. One-word and case-based questions prepare students for concept clarity and long answers. You have covered weak areas very well."
       },
       {
-        "name": "Ms Meenakshi Mishra",
+        "name": "Ms Meenakshi Mishra ",
         "role": "HOD Business Studies Department, Vivekanand School, New Delhi",
         "message": "The book completely covers revision of all aspects and weak areas of every chapter. A vast collection of case studies enables concept clarity – making the mission of scoring 95+ achievable."
       },
       {
-        "name": "Anjali",
+        "name": "Anjali ",
         "role": "Air Force Bal Bharti, Lodhi Road, New Delhi",
         "message": "All the questions are very conceptual and require proper thinking. Some are linked with current market situations. Answers of reason-based questions are given with full clarity."
       },
       {
-        "name": "Bela Sharma",
+        "name": "Bela Sharma ",
         "role": "Army Public School, Shankar Vihar, New Delhi",
         "message": "It’s an amazing effort. Quality and content will really benefit everyone as all aspects of the chapters are covered from every possible angle."
       },
       {
-        "name": "Deepali Gupta",
+        "name": "Deepali Gupta ",
         "role": "Queen Mary’s School, New Delhi",
         "message": "Quality of questions is commendable; they relate theoretical concepts with real-life situations. Proper explanation with correct reasoning makes this a complete list of OTQs."
       }
@@ -294,34 +294,50 @@
   },
 
   "links": {
-    "subtitle": "Quick access to key resources and profiles.",
+    "subtitle": "Quick access to official profiles, resources and important links.",
     "items": [
+      
+  
       {
-        "label": "Official Website – LearnTreeEdu.com",
-        "url": "https://learntreeedu.com",
+        "label": "Resource Person – R. K. Mahajan (Profile)",
+        "url": "https://docs.google.com/document/d/1vsGWTpya2JALgAxEm4LWraHVScmug0BquU0pATyO7Po/edit?usp=sharing",
+        "type": "Resource Person"
+      },
+ 
+      {
+        "label": "Facebook – R. K. Mahajan",
+        "url": "https://www.facebook.com/rmahajan21",
+        "type": "Social Media"
+      },
+      {
+        "label": "YouTube – R. K. Mahajan",
+        "url": "https://www.youtube.com/@21rkmahajan",
+        "type": "Social Media"
+      },
+      {
+        "label": "Instagram – @rkmahajan21",
+        "url": "https://www.instagram.com/rkmahajan21",
+        "type": "Social Media"
+      },
+      
+  
+      {
+        "label": "Blogger – Academic Articles",
+        "url": "https://21rkmahajan.blogspot.com/",
+        "type": "Social Media"
+      },
+      {
+        "label": "Official Website",
+        "url": "https://www.thelte.com",
         "type": "Website"
-      },
-      {
-        "label": "Buy Objective Type Questions – Business Studies Class XII (Amazon)",
-        "url": "https://amzn.in/d/4gXBuSB",
-        "type": "Buy Book"
-      },
-      {
-        "label": "Email – care.lte2020@gmail.com",
-        "url": "mailto:care.lte2020@gmail.com",
-        "type": "Contact"
-      },
-      {
-        "label": "Call – 9810003854",
-        "url": "tel:+919810003854",
-        "type": "Contact"
       }
     ]
   },
+  
 
   "footer": {
     "address": "Site – 1/215, Vikas Puri, New Delhi – 110018",
     "phone": "9810003854",
-    "email": "care.lte2020@gmail.com"
+    "email": " 21rmahajan@gmail.com"
   }
 }
