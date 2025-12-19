@@ -1,7 +1,7 @@
 {
   "site": {
     "name": "Learning Tree Edusolutions",
-    "tagline": "Objective Type Questions • Workshops • Exam Excellence",
+    "tagline": "Striving towards excellence in Commerce Education",
     "heroTitle": "Objective Type Questions that prepare students for Boards, CUET & Olympiads",
     "heroSubtitle": "Curated by experienced Business Studies educators, aligned with the latest CBSE guidelines and designed for high-stakes exams.",
     "heroHighlights": [
@@ -12,7 +12,7 @@
     "navItems": [
       { "label": "About", "target": "about" },
       { "label": "Workshop Photos", "target": "workshops" },
-      { "label": "Books & Pappers", "target": "books" },
+      { "label": "Buy Books", "target": "books" },
       { "label": "Testimonials", "target": "testimonials" },
       { "label": "Accolades & Recognitions", "target": "gallery" },
     
@@ -106,7 +106,7 @@
           ]
         },
         {
-          "title": "Teachers’ Workshop at Jaipur, RajasThan",
+          "title": "Teachers’ Workshop at Jaipur, Rajasthan",
           "description": "Workshop session.",
           "dateLabel": "Workshop Session",
           "location": "Jaipur, RajasThan",
@@ -180,15 +180,14 @@
           "image": "assets/img/workshops/Ex-CBSE-Chairman-Vineet-Joshi.jpg",
           "tags": [
             "Guest Speaker",
-            "Judge",
-            "Ex-CBSE-Chairman"
+            "Judge"
           ]
         },
         {
           "title": "Teachers’ Workshop at DAV School Rohini ",
           "description": "Interactive academic workshop session.",
           "dateLabel": "Workshop Session",
-          "location": "Rohini, New Delhi",
+          "location": "New Delhi",
           "image": "assets/img/workshops/Teachers-Workshop-Delhi-Public-School-Rohini.jpg",
           "tags": [
             "Workshop",
@@ -366,7 +365,7 @@
       {
         "name": "Ms Surabhi Sinha ",
         "role": "PGT (Commerce), Mother’s Global School, Preet Vihar, New Delhi",
-        "message": "Your books are complete in all aspects – good for both teachers and students. Lessons are planned in a very systematic way. Value based questions and very short answer questions cover everything. Addendum contains good case studies. Class XI book is excellent – simple language, systematic progress and different categories of questions covering the whole chapter."
+        "message": "Your books are complete in all aspects – good for both teachers and students. Lessons are planned in a very systematic way. Presentation is very good, simple language, no unnecessary explanation, systematic progress, that is from basic concepts to the depth of the subject matter. It's good that NCERT questions are also considered with answers. I really appreciate your efforts."
       },
       {
         "name": "Ms Arti Chopra ",
@@ -396,12 +395,12 @@
       {
         "name": "Ms Meenakshi Deewan ",
         "role": "Ramjas School, Pusa Road, New Delhi",
-        "message": "We have recommended your OTQ book to our students and plan to add it to the official book list. It is a complete material on which we can blindly rely for board preparation."
+        "message": "I have gone through the OTQs, Sir your hard work and efforts in preparing these questions are commendable. Each and every concept is covered and cases used to put questions are very relatable. A complete material on which we can blindly rely for board preparation. In the next session, we are planning to add this book in our book list. Thanks for sharing your knowledge with us and our students."
       },
       {
-        "name": "Ms Mamta Srivastava ",
-        "role": "PGT (Commerce), Delhi Public School, Mathura Road, New Delhi",
-        "message": "This book is just what I was looking for. A great way to quickly understand the Class XII syllabus with a large variety of OTQs as per latest CBSE pattern. Students can first understand the chapter from this book and then revise from NCERT."
+        "name": "Ms Mamta Srivastava PGT (Commerce) ",
+        "role": "Delhi Public School, Mathura Road, New Delhi",
+        "message": "This book is just what I was looking for. A great way to quickly understand and comprehend Class XII Business Studies syllabus. The book covers each chapter in such a detailed and easy manner that a reader can understand the whole chapter firstly from this book and then can do revision from NCERT. Hats off for such an elaborate coverage of content."
       },
       {
         "name": "Ms Neena Batra ",
@@ -411,7 +410,7 @@
       {
         "name": "Ms Sangeeta Vashisth ",
         "role": "HOD Commerce, The Mann School, New Delhi",
-        "message": "The specimen OTQ book is wonderful – all varieties of MCQs students need to practise. One-word and case-based questions prepare students for concept clarity and long answers. You have covered weak areas very well."
+        "message": "The book is wonderful because one-word answer questions, based on case studies, prepare a child not only for the concept clarity in short answers but even for long answer questions as well. Mostly, children identify wrong concepts, and hence remaining answers also go wrong, that weak area is also covered by you."
       },
       {
         "name": "Ms Meenakshi Mishra ",
@@ -432,7 +431,75 @@
         "name": "Deepali Gupta ",
         "role": "Queen Mary’s School, New Delhi",
         "message": "Quality of questions is commendable; they relate theoretical concepts with real-life situations. Proper explanation with correct reasoning makes this a complete list of OTQs."
-      }
+      },
+      {
+        "name": "Mamta Narula ",
+        "role": "PGT (Commerce) Delhi Public School, Vasant Kunj, New Delhi",
+        "message": "I really liked the way Objective type questions are framed and arranged in this book. This book provides comprehensive coverage of the different types of objective type questions and will be useful to students for preparing them for board exams. I appreciate the hard work and creativity in bringing such quality material for all."
+      },
+      {
+        "name": "Mridula Chawla ",
+        "role": "Shivvani Model Sr. Sec School, Dwarka, New Delhi",
+        "message": "Your focused approach and analysis of OTQ Business studies is refreshing and ignites the mind of students to sharpen their analytical skills. All questions are competency-based which give, not only to students but also to teachers, a new perspective towards overall development with different dimensions. This book is a complete package in itself and the students may not require any additional study material."
+      },
+      {
+  "name": "Ms Divya Aggarwal ",
+  "role": "Bal Bharti Public School Rohini, New Delhi",
+  "message": "The OTQ book of Mahajan Sir is a very well planned, researched based book having a variety of questions from each chapter. It would really be a great source for the students to prepare for the board exam. It has a wide array of questions which would satisfy the learning desire and curiosity of the students."
+},
+{
+  "name": "Varsha Khajanchi ",
+  "role": "PGT Commerce, Manav Rachna International School, Charmwood, Faridabad, Haryana",
+  "message": "Mr R. K. Mahajan has put down a very comprehensive question bank with a superlative quality not seen in the market yet. His work is student-focused, detailed oriented, and result-driven which completely ensures learning to the student. My expectations have been exceeded time and again by the quality of work that he puts in keeping in mind different types of learners and their learning needs. Dynamism in his work is clearly visible according to the learning environment and examination pattern. I extend my heartiest congratulations to him for producing such quality work with his constant zeal to do the best in student’s interest."
+},
+{
+  "name": "Parul Jain ",
+  "role": "H.O.D. (Commerce), Navy Children School, Chanakya Puri, New Delhi",
+  "message": "This book contains a plethora of questions on each topic. These questions have been prepared with extensive research, hard work and reasoning. The author has applied his intellect, knowledge and wide experience in preparing a Kaleidoscope of questions, which is as per the latest pattern of CBSE board papers. It provides the students with comprehensive and in-depth knowledge of concepts and fully prepares them for the Board exams. The new feature added to the book is 'Correct the Incorrect statement' - An innovative approach by the author."
+},
+{
+  "name": "Priyanka Jain",
+  "role": "Amity International School Sector 46, Haryana",
+  "message": "A comprehensive and relevant collection of objective type of questions. Each topic has been analysed carefully. Answers to all questions without any ambiguity are highly appreciated. This effort of yours will certainly help students to prepare well for their exams."
+},
+{
+  "name": "Manju Nawani ",
+  "role": "Air Force Golden Jubilee Institute, Subroto Park, New Delhi",
+  "message": "OTQ Book on Business Studies, It indeed reflects a lot of thought process, hard work and it depicts a good vision about all the aspects of about CBSE business studies paper. I have recommended the same to my students also."
+},
+{
+  "name": "Roopali Trehan Ahuja ",
+  "role": "PGT Commerce, Bhatnagar International School, Paschim Vihar, New Delhi",
+  "message": "A thorough review of the book reveals that all the questions have been framed very carefully and with complete clarity of concepts. The way some of them have been related to the present scenario is highly appreciated. I have recommended this book to students, as it covers all the important concepts of the subject. It will not only prepare them for their forthcoming board exams but also give them an insight into the knowledge they have gained."
+},
+{
+  "name": "Sandhya Wadhwa ",
+  "role": "PGT Commerce, Ramjas Public School (Day Boarding)",
+  "message": "An excellent approach to objective type questions. The best part of the book is that it contains questions regarding conceptual clarity as well as real-life situations. I am sure that it will help students in achieving proficiency and clarity while attempting objective type questions. This book will fulfil all the subject related needs of the children. Great work done!"
+},
+{
+  "name": "Shalini Arora ",
+  "role": "HOD Commerce, GLT Saraswati Bal Mandir, Nehru Nagar, New Delhi",
+  "message": "Mr R. K. Mahajan who is a known academician authority in the field of Business Studies, has successfully authored a new book on the subject and in the MCQ format. The reading is lucid and probes the student to study in a smooth way. The subject is covered from end to end in a progressive manner so that the understanding goes up steeply when all MCQs are attempted by the student."
+},
+{
+  "name": "Ms Mridu Mehra ",
+  "role": "New Era Public School, Mayapuri, New Delhi",
+  "message": "This book by far has the most comprehensive collection of all possible types of OTQs ranging from MCQs, Fill in the blanks, one word answers, True/false, correct the incorrect statement, etc. It even has picture identification and assertion based questions which I personally haven’t come across in any other reference book. It is a complete help book in the true sense. Will definitely recommend it to my students!"
+},
+{
+  "name": "Ms Manjula Mehta ",
+  "role": "Vidya Bhawan Mahavidyalaya, Lodi Road, New Delhi",
+  "message": "Mahajan Sir, your work is a well-organized, carefully prepared volume, which covers all conceivable aspects of Business Studies. The vast amount of questions have covered even the minute details of a chapter. The Book has the latest CBSE Curriculum and the latest Typology of Questions which makes it helpful for students."
+}
+
+
+
+
+
+
+
+
     ]
   },
   "gallery": {
