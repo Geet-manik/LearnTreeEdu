@@ -86,14 +86,21 @@ function renderWorkshops(workshops) {
   (workshops.items || []).forEach((ws) => {
     const card = document.createElement("article");
     card.className = "card workshop-card reveal";
-
     if (ws.image) {
       const img = document.createElement("img");
       img.src = ws.image;
       img.alt = ws.title;
       img.className = "workshop-image";
+    
+      // 🔥 CLICK TO EXPAND
+      img.style.cursor = "zoom-in";
+      img.addEventListener("click", () => {
+        openLightbox(ws.image, ws.title);
+      });
+    
       card.appendChild(img);
     }
+    
 
     const h3 = document.createElement("h3");
     h3.textContent = ws.title;
@@ -296,7 +303,11 @@ function renderBooks(books) {
 //     // Actions
 const actions = document.createElement("div");
 actions.className = "book-actions";
-
+    const detailsBtn = document.createElement("button");
+    detailsBtn.className = "btn btn-outline btn-sm";
+    detailsBtn.textContent = "View details";
+    detailsBtn.addEventListener("click", () => openBookModal(book));
+    actions.appendChild(detailsBtn);
 (book.buyOptions || []).forEach((opt) => {
   const btn = document.createElement("a");
   btn.className = `btn btn-${opt.style || "outline"} btn-sm`;
