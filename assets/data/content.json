@@ -11,8 +11,8 @@
     ],
     "navItems": [
       { "label": "About", "target": "about" },
-      { "label": "Workshop Photos", "target": "workshops" },
       { "label": "Buy Books", "target": "books" },
+      { "label": "Workshop Photos", "target": "workshops" },
       { "label": "Testimonials", "target": "testimonials" },
       { "label": "Accolades & Recognitions", "target": "gallery" },
     

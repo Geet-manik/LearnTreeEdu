@@ -355,7 +355,7 @@
 
   .about-layout {
     display: grid;
-    grid-template-columns: minmax(0, 1.75fr) minmax(0, 1.1fr);
+    /* grid-template-columns: minmax(0, 1.75fr) minmax(0, 1.1fr); */
     gap: 2.5rem;
     align-items: flex-start;
   }

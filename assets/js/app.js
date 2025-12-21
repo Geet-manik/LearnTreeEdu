@@ -782,7 +782,7 @@ async function init() {
     const data = await fetchContent();
 
     renderSiteMeta(data.site);
-    renderAbout(data.about);
+    // renderAbout(data.about);
     renderWorkshops(data.workshops);
     renderBooks(data.books);
     renderTestimonials(data.testimonials);
