@@ -501,7 +501,23 @@ function openBookModal(book) {
     p.textContent = para;
     detailsCol.appendChild(p);
   });
-
+  if (book.features && book.features.length) {
+    const ul = document.createElement("ul");
+  
+    book.features.forEach((f) => {
+      const li = document.createElement("li");
+  
+      if (typeof f === "string") {
+        li.textContent = f; // OTQ book
+      } else {
+        li.innerHTML = `<strong>${f.title}:</strong> ${f.text}`;
+      }
+  
+      ul.appendChild(li);
+    });
+  
+    detailsCol.appendChild(ul);
+  }
   if (book.bullets && book.bullets.length) {
     const bulletsHeading = document.createElement("h3");
     bulletsHeading.className = "book-modal-section-title";
@@ -517,20 +533,8 @@ function openBookModal(book) {
     detailsCol.appendChild(ul);
   }
 
-  if (book.features && book.features.length) {
-    const featHeading = document.createElement("h3");
-    featHeading.className = "book-modal-section-title";
-    featHeading.textContent = book.featuresHeading || "Features based on";
-    detailsCol.appendChild(featHeading);
 
-    const ul = document.createElement("ul");
-    book.features.forEach((f) => {
-      const li = document.createElement("li");
-      li.textContent = f;
-      ul.appendChild(li);
-    });
-    detailsCol.appendChild(ul);
-  }
+  
 
   if (book.contributors && book.contributors.length) {
     const contribHeading = document.createElement("h3");
