@@ -10,7 +10,7 @@
       "Perfect for CBSE Class XII, CUET, Olympiads & competitive exams"
     ],
     "navItems": [
-      { "label": "About", "target": "about" },
+      { "label": "About Us", "target": "about" },
       { "label": "Buy Books", "target": "books" },
       { "label": "Workshop Photos", "target": "workshops" },
       { "label": "Testimonials", "target": "testimonials" },
