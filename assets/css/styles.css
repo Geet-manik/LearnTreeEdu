@@ -1073,3 +1073,9 @@ margin-bottom: 5vh;
     height: 420px;
   }
 }
+/* Active nav link */
+.nav-links a.active {
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #ffffff;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
+}

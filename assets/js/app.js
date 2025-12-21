@@ -173,6 +173,31 @@ function setupFlipbook(flipbook) {
 
   render();
 }
+function setupActiveNav() {
+  const sections = document.querySelectorAll("section[id]");
+  const navLinks = document.querySelectorAll(".nav-links a");
+
+  function onScroll() {
+    let scrollPos = window.scrollY + 120;
+
+    sections.forEach((section) => {
+      const top = section.offsetTop;
+      const height = section.offsetHeight;
+      const id = section.getAttribute("id");
+
+      if (scrollPos >= top && scrollPos < top + height) {
+        navLinks.forEach((link) => link.classList.remove("active"));
+        const activeLink = document.querySelector(
+          `.nav-links a[href="#${id}"]`
+        );
+        if (activeLink) activeLink.classList.add("active");
+      }
+    });
+  }
+
+  window.addEventListener("scroll", onScroll);
+  onScroll(); // run once on load
+}
 
 function renderBooks(books) {
   $("#books-subtitle").textContent = books.subtitle;
@@ -762,7 +787,7 @@ async function init() {
     renderBooks(data.books);
     renderTestimonials(data.testimonials);
     setupFlipbook(data.flipbooks);
-
+    setupActiveNav();
     // renderGallery(data.gallery);
     renderLinks(data.links);
     renderFooter(data.site, data.footer);
