@@ -28,14 +28,40 @@
   },
   "flipbooks": {
     "title": "Objective Type Questions – Class XII",
-    "previewLimit": 3,
+    "previewLimit": 25,
     "pages": [
-      "assets/img/workshops/Guest-at-Ryan-International.jpg", 
-      "assets/img/workshops/Inservice-Teachers-Training-KV-Gurugram.jpg",
-      "assets/img/workshops/Guest-at-Ryan-International-2.jpg"
+      "assets/img/flipbook/page_01.jpg",
+      "assets/img/flipbook/page_02.jpg",
+      "assets/img/flipbook/page_03.jpg",
+      "assets/img/flipbook/page_04.jpg",
+      "assets/img/flipbook/page_05.jpg",
+      "assets/img/flipbook/page_06.jpg",
+      "assets/img/flipbook/page_07.jpg",
+      "assets/img/flipbook/page_08.jpg",
+      "assets/img/flipbook/page_09.jpg",
+      "assets/img/flipbook/page_10.jpg",
+      "assets/img/flipbook/page_11.jpg",
+      "assets/img/flipbook/page_12.jpg",
+      "assets/img/flipbook/page_13.jpg",
+      "assets/img/flipbook/page_14.jpg",
+      "assets/img/flipbook/page_15.jpg",
+      "assets/img/flipbook/page_16.jpg",
+      "assets/img/flipbook/page_17.jpg",
+      "assets/img/flipbook/page_18.jpg",
+      "assets/img/flipbook/page_19.jpg",
+      "assets/img/flipbook/page_20.jpg",
+      "assets/img/flipbook/page_21.jpg",
+      "assets/img/flipbook/page_22.jpg",
+      "assets/img/flipbook/page_23.jpg",
+      "assets/img/flipbook/page_24.jpg",
+      "assets/img/flipbook/page_25.jpg"
     ],
     "buyAmazon": "https://amzn.in/d/4gXBuSB",
-    "whatsappNumber": "919810003854"
+    "whatsappNumber": "919810003854",
+    "pdfDownload": {
+      "label": "Download Full PDF",
+      "url": "assets/pdf/OTQ-BST-Class-XII.pdf"
+    }
   },  
   "about": {
     "subtitle": "",

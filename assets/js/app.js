@@ -146,6 +146,7 @@ function setupFlipbook(flipbook) {
   let index = 0;
   const pages = flipbook.pages;
   const limit = flipbook.previewLimit;
+  const pdfBtn = document.getElementById("flip-download-pdf");
 
   function render() {
     imgEl.src = pages[index];
@@ -177,7 +178,13 @@ function setupFlipbook(flipbook) {
     encodeURIComponent(
       `Hi, I want to buy "${flipbook.title}". Please share payment details. (Available discounts with free shipping)`
     );
-
+    if (flipbook.pdfDownload) {
+      pdfBtn.href = flipbook.pdfDownload.url;
+      pdfBtn.textContent = flipbook.pdfDownload.label || "Download PDF";
+    } else {
+      pdfBtn.style.display = "none";
+    }
+    
   render();
 }
 function setupActiveNav() {
