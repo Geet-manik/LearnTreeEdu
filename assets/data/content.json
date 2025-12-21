@@ -22,7 +22,7 @@
         "url": "https://forms.gle/cbFMzUiCexB6dBy3A"
       },
     
-      { "label": "Flipbook", "target": "flipbooks" }
+      { "label": "CBSE Papers", "target": "papers" }
     ]
     
   },
@@ -296,12 +296,7 @@
             "url": "https://amzn.in/d/4gXBuSB",
             "style": "primary"
           },
-          {
-            "label": "Buy from Meritbox",
-            "type": "external",
-            "url": "https://meritbox.app/books/a-textbook-of-business-studies-for-class-xii",
-            "style": "outline"
-          },
+      
           {
             "label": "Buy from Us (Free Shipping)",
             "type": "whatsapp",
