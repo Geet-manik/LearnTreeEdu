@@ -49,8 +49,7 @@
         <p class="hero-subtitle" id="hero-subtitle"></p>
 
         <div class="hero-actions">
-          <a href="#books" class="btn btn-primary">Buy Books</a>
-          <a href="#workshops" class="btn btn-outline">View Workshop Photos</a>
+          <a href="#books" class="btn btn-outline">Buy Books</a>
         </div>
 
         <ul class="hero-highlights" id="hero-highlights"></ul>
@@ -328,6 +327,19 @@
       </div>
     </div>
   </div>
+
+  <!-- Flipbook Fullscreen Modal -->
+<div class="modal" id="flipbook-modal" aria-hidden="true">
+  <div class="modal-backdrop" data-modal-close></div>
+
+  <div class="modal-dialog modal-dialog-large">
+    <button class="modal-close" data-modal-close>✕</button>
+
+    <div class="modal-content lightbox-content">
+      <img id="flipbook-full-image" alt="Flipbook page" />
+    </div>
+  </div>
+</div>
 
   <!-- Image Lightbox -->
   <div class="modal" id="lightbox-modal" aria-hidden="true">

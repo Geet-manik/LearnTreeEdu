@@ -503,18 +503,18 @@ function openBookModal(book) {
   });
   if (book.features && book.features.length) {
     const ul = document.createElement("ul");
-  
     book.features.forEach((f) => {
       const li = document.createElement("li");
-  
+    
       if (typeof f === "string") {
-        li.textContent = f; // OTQ book
+        li.textContent = f;
       } else {
         li.innerHTML = `<strong>${f.title}:</strong> ${f.text}`;
       }
-  
+    
       ul.appendChild(li);
     });
+  
   
     detailsCol.appendChild(ul);
   }
