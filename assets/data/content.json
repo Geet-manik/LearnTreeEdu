@@ -307,6 +307,69 @@
         
         "whatsappNumber": "919810003854"
 
+      },
+      {
+        "id": "bst12-otq",
+        "title": "Objective Type Questions on Business Studies – Class XII",
+        "edition": "Latest Edition",
+        "class": "CBSE Class XII",
+        "coverImage": "assets/img/frontcover.jpeg",
+        "backImage": "assets/img/backcover.jpeg",
+        "price": 275,
+        "currency": "INR",
+        "questionCount": "3000+",
+        "suitableFor": ["CUET", "CBSE Board", "Olympiads", "Competitive Exams"],
+        "descriptionHeading": "One Book, Multiple Benefits",
+        "description": [
+          "Why buy multiple books when one comprehensive guide can serve all your needs?",
+          "This book is thoughtfully designed to support your CBSE Board examination preparation and also serves as a valuable resource for CUET, Olympiads and other competitive exams."
+        ],
+        "bullets": [
+          "NCERT-based: aligned with NCERT text, phrases and vocabulary for seamless understanding.",
+          "Expert authors: prepared by experienced Business Studies authors and reviewers with decades of classroom experience.",
+          "Tailored content: includes deleted topics list for CBSE students and additional content for CUET aspirants.",
+          "Extensive practice: 3000+ practice questions in MCQs, case-based MCQs, assertion–reason, statement correction, true/false, fill in the blanks and one-word/one-sentence answer formats."
+        ],
+        "featuresHeading": "Features Based On",
+        "features": [
+          "CUET & CBSE syllabus",
+          "CBSE Circular 57/2022",
+          "Competency-based MCQs",
+          "True / False questions",
+          "Reason and Assertion questions",
+          "CPA 2019",
+          "Fill in the Blanks",
+          "Correct / Incorrect statement items"
+        ],
+        "contributorsHeading": "List of Contributors",
+        "contributors": [
+          "Ms Akanksha Garg, Vishwa Bharti Public School, Noida (U.P.)",
+          "Ms Mridula Chawla, Shiv Vani Model School, Dwarka, New Delhi",
+          "Ms Parul Jain, Navy Children School, Chanakyapuri, New Delhi",
+          "Ms Priyanka Jain, HOD Commerce, Amity International School, Gurugram, Haryana",
+          "Ms Rashmi Kaul, HOD Commerce, Kothari International School, Noida, U.P.",
+          "Mr Sameer Bhatia, Maxfort School, Rohini, New Delhi",
+          "Ms Sumathy Raghunath, HOD Commerce, Cambridge School, Noida, U.P.",
+          "Ms Varsha Khajanchi, Manav Rachna International School, Faridabad"
+        ],
+        "buyOptions": [
+          {
+            "label": "Buy from Meritbox",
+            "type": "external",
+            "url": "https://meritbox.app/books/a-textbook-of-business-studies-for-class-xii",
+            "style": "outline"
+          },
+      
+          {
+            "label": "Buy from Us (Free Shipping)",
+            "type": "whatsapp",
+            "number": "919810003854",
+            "style": "success"
+          }
+        ],
+        
+        "whatsappNumber": "919810003854"
+
       }
     ]
   },
