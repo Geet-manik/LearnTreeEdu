@@ -1071,8 +1071,9 @@ margin-bottom: 5vh;
   display: flex;
   gap: 0.75rem;
   margin-top: 1rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-
 .hidden {
   display: none;
 }
@@ -1089,4 +1090,93 @@ margin-bottom: 5vh;
   background: linear-gradient(135deg, #2563eb, #1d4ed8);
   color: #ffffff;
   box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
+}
+.modal-dialog-large {
+  max-width: 100%;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-dialog-large .modal-content {
+  height: 100%;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#flipbook-full-image {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+.flipbook-fullscreen {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.flipbook-frame.fullscreen {
+  width: 90%;
+  height: 90%;
+  position: relative;
+}
+
+.flipbook-frame.fullscreen img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.modal-dialog-large {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+}
+@media (max-width: 600px) {
+  .flipbook-overlay {
+    padding: 1.25rem;
+  }
+
+  .flipbook-overlay h3 {
+    font-size: 1.05rem;
+  }
+
+  .flipbook-overlay p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .flipbook-cta {
+    flex-direction: column;        /* 🔥 stack buttons */
+    width: 100%;
+    gap: 0.6rem;
+  }
+
+  .flipbook-cta .btn {
+    width: 100%;                   /* 🔥 full-width buttons */
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 0.5rem 0.8rem;          /* better tap size */
+  }
+}
+@media (min-width: 601px) and (max-width: 900px) {
+  .flipbook-frame {
+    height: 70vh;
+  }
+
+  .flipbook-cta {
+    gap: 0.6rem;
+  }
+
+  .flipbook-cta .btn {
+    padding: 0.6rem 1.1rem;
+    font-size: 0.85rem;
+  }
 }

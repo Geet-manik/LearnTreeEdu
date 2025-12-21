@@ -135,29 +135,44 @@ function renderWorkshops(workshops) {
 function setupFlipbook(flipbook) {
   if (!flipbook) return;
 
-  const imgEl = document.getElementById("flipbook-page");
-  const overlay = document.getElementById("flipbook-overlay");
-  const prevBtn = document.getElementById("flip-prev");
-  const nextBtn = document.getElementById("flip-next");
-
-  const amazonBtn = document.getElementById("flip-buy-amazon");
-  const waBtn = document.getElementById("flip-buy-whatsapp");
-
   let index = 0;
   const pages = flipbook.pages;
   const limit = flipbook.previewLimit;
-  const pdfBtn = document.getElementById("flip-download-pdf");
 
-  function render() {
-    imgEl.src = pages[index];
+  // Preview elements
+  const previewImg = document.getElementById("flipbook-page");
+  const previewOverlay = document.getElementById("flipbook-overlay");
+  const prevBtn = document.getElementById("flip-prev");
+  const nextBtn = document.getElementById("flip-next");
 
-    if (index >= limit - 1) {
-      overlay.classList.remove("hidden");
-    } else {
-      overlay.classList.add("hidden");
-    }
+  // Fullscreen elements
+  const modal = document.getElementById("flipbook-modal");
+  const fullImg = document.getElementById("flipbook-full-page");
+  const fullOverlay = document.getElementById("flipbook-full-overlay");
+  const fullPrev = document.getElementById("flip-full-prev");
+  const fullNext = document.getElementById("flip-full-next");
+
+  // CTA
+  document.getElementById("flip-full-amazon").href = flipbook.buyAmazon;
+  document.getElementById("flip-full-whatsapp").href =
+    `https://wa.me/${flipbook.whatsappNumber}?text=` +
+    encodeURIComponent(`Hi, I want to buy "${flipbook.title}".`);
+
+  if (flipbook.pdfDownload) {
+    document.getElementById("flip-full-pdf").href =
+      flipbook.pdfDownload.url;
   }
 
+  function render() {
+    previewImg.src = pages[index];
+    fullImg.src = pages[index];
+
+    const showCTA = index >= limit - 1;
+    previewOverlay.classList.toggle("hidden", !showCTA);
+    fullOverlay.classList.toggle("hidden", !showCTA);
+  }
+
+  // Preview navigation
   prevBtn.onclick = () => {
     if (index > 0) {
       index--;
@@ -172,21 +187,17 @@ function setupFlipbook(flipbook) {
     }
   };
 
-  amazonBtn.href = flipbook.buyAmazon;
-  waBtn.href =
-    `https://wa.me/${flipbook.whatsappNumber}?text=` +
-    encodeURIComponent(
-      `Hi, I want to buy "${flipbook.title}". Please share payment details. (Available discounts with free shipping)`
-    );
-    if (flipbook.pdfDownload) {
-      pdfBtn.href = flipbook.pdfDownload.url;
-      pdfBtn.textContent = flipbook.pdfDownload.label || "Download PDF";
-    } else {
-      pdfBtn.style.display = "none";
-    }
-    
+  // Fullscreen navigation
+  fullPrev.onclick = prevBtn.onclick;
+  fullNext.onclick = nextBtn.onclick;
+
+  // Open fullscreen
+  previewImg.onclick = () => openModal(modal);
+
   render();
 }
+
+
 function setupActiveNav() {
   const sections = document.querySelectorAll("section[id]");
   const navLinks = document.querySelectorAll(".nav-links a");
