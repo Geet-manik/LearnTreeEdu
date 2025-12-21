@@ -334,8 +334,8 @@
   },
   
   "testimonials": {
-    "booksTitle": "Testimonials – Text Books on Business Studies",
-    "booksSubtitle": "What teachers and students say about the core Business Studies textbooks.",
+    "booksTitle": "Text Books on Business Studies - XI & XII",
+    "booksSubtitle": "",
     "booksItems": [
       {
         "name": "Ms Santvana Charuvedi ",
@@ -374,8 +374,8 @@
       }
     ],
 
-    "otqTitle": "Testimonials – Objective Type Questions on Business Studies (OTQ Book)",
-    "otqSubtitle": "Feedback specifically for the ‘Objective Type Questions on Business Studies – Class XII’ book.",
+    "otqTitle": "Objective Type Questions on Business Studies - XII (OTQ Book)",
+    "otqSubtitle": "",
     "otqItems": [
       {
         "name": "Leena Arora ",
@@ -488,13 +488,6 @@
   "message": "Mahajan Sir, your work is a well-organized, carefully prepared volume, which covers all conceivable aspects of Business Studies. The vast amount of questions have covered even the minute details of a chapter. The Book has the latest CBSE Curriculum and the latest Typology of Questions which makes it helpful for students."
 }
 
-
-
-
-
-
-
-
     ]
   },
   "gallery": {
@@ -570,11 +563,6 @@
         "label": "Blogger – Academic Articles",
         "url": "https://21rkmahajan.blogspot.com/",
         "type": "Social Media"
-      },
-      {
-        "label": "Official Website",
-        "url": "https://www.thelte.com",
-        "type": "Website"
       }
     ]
   },
