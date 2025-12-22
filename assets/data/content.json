@@ -424,7 +424,7 @@
             "label": "Buy from Meritbox",
             "type": "external",
             "url": "https://meritbox.app/books/a-textbook-of-business-studies-for-class-xii",
-            "style": "outline"
+            "style": "primary"
           },
           {
             "label": "Buy from Us (Free Shipping)",
