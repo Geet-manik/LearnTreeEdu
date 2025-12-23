@@ -132,70 +132,63 @@ function renderWorkshops(workshops) {
     listEl.appendChild(card);
   });
 }
-function setupFlipbook(flipbook) {
-  if (!flipbook) return;
+function renderSampleChapters(samples) {
+  if (!samples || !samples.items) return;
 
-  let index = 0;
-  const pages = flipbook.pages;
-  const limit = flipbook.previewLimit;
+  const grid = document.getElementById("sample-chapters");
+  if (!grid) return;
 
-  // Preview elements
-  const previewImg = document.getElementById("flipbook-page");
-  const previewOverlay = document.getElementById("flipbook-overlay");
-  const prevBtn = document.getElementById("flip-prev");
-  const nextBtn = document.getElementById("flip-next");
+  grid.innerHTML = "";
 
-  // Fullscreen elements
-  const modal = document.getElementById("flipbook-modal");
-  const fullImg = document.getElementById("flipbook-full-page");
-  const fullOverlay = document.getElementById("flipbook-full-overlay");
-  const fullPrev = document.getElementById("flip-full-prev");
-  const fullNext = document.getElementById("flip-full-next");
+  samples.items.forEach((item) => {
+    const card = document.createElement("article");
+    card.className = "card sample-card reveal";
 
-  // CTA
-  document.getElementById("flip-full-amazon").href = flipbook.buyAmazon;
-  document.getElementById("flip-full-whatsapp").href =
-    `https://wa.me/${flipbook.whatsappNumber}?text=` +
-    encodeURIComponent(`Hi, I want to buy "${flipbook.title}".`);
+    const actions = document.createElement("div");
+    actions.className = "sample-actions";
 
-  if (flipbook.pdfDownload) {
-    document.getElementById("flip-full-pdf").href =
-      flipbook.pdfDownload.url;
-  }
+    // ✅ Download Sample
+    const downloadBtn = document.createElement("a");
+    downloadBtn.href = item.samplePdf;
+    downloadBtn.download = "";
+    downloadBtn.className = "btn btn-outline btn-sm";
+    downloadBtn.textContent = "Download Sample";
+    actions.appendChild(downloadBtn);
 
-  function render() {
-    previewImg.src = pages[index];
-    fullImg.src = pages[index];
+    // ✅ Dynamic Buy Options (same logic as books)
+    (item.buyOptions || []).forEach((opt) => {
+      const btn = document.createElement("a");
+      btn.className = `btn btn-${opt.style || "outline"} btn-sm`;
+      btn.textContent = opt.label;
 
-    const showCTA = index >= limit - 1;
-    previewOverlay.classList.toggle("hidden", !showCTA);
-    fullOverlay.classList.toggle("hidden", !showCTA);
-  }
+      if (opt.type === "external") {
+        btn.href = opt.url;
+        btn.target = "_blank";
+        btn.rel = "noopener noreferrer";
+      }
 
-  // Preview navigation
-  prevBtn.onclick = () => {
-    if (index > 0) {
-      index--;
-      render();
-    }
-  };
+      if (opt.type === "whatsapp") {
+        btn.href =
+          `https://wa.me/${opt.number}?text=` +
+          encodeURIComponent(
+            opt.message ||
+              `Hi, I want to buy "${item.title}". Please share details.`
+          );
+        btn.target = "_blank";
+        btn.rel = "noopener noreferrer";
+      }
 
-  nextBtn.onclick = () => {
-    if (index < pages.length - 1) {
-      index++;
-      render();
-    }
-  };
+      actions.appendChild(btn);
+    });
 
-  // Fullscreen navigation
-  fullPrev.onclick = prevBtn.onclick;
-  fullNext.onclick = nextBtn.onclick;
-
-  // Open fullscreen
-  previewImg.onclick = () => openModal(modal);
-
-  render();
+    card.innerHTML = `<h3>${item.title}</h3>`;
+    card.appendChild(actions);
+    grid.appendChild(card);
+  });
 }
+
+
+
 
 
 function setupActiveNav() {
@@ -819,7 +812,8 @@ async function init() {
     renderWorkshops(data.workshops);
     renderBooks(data.books);
     renderTestimonials(data.testimonials);
-    setupFlipbook(data.flipbooks);
+  
+    renderSampleChapters(data.sampleChapters);
     setupActiveNav();
     // renderGallery(data.gallery);
     renderLinks(data.links);

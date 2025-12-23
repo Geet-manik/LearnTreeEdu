@@ -238,42 +238,21 @@
       </div>
     </div>
   </section>
-  <section id="flipbooks" class="section section-alt">
+ <section id="samples" class="section section-alt">
     <div class="container">
       <div class="section-header">
-        <h2>Flipbooks</h2>
+        <h2>Sample Chapters</h2>
         <p class="section-subtitle">
-          Preview selected pages from our books.
+          Download sample chapters from our books before you buy.
         </p>
       </div>
-
-      <div class="flipbook-wrapper">
-        <button class="flip-btn prev" id="flip-prev">←</button>
-
-        <div class="flipbook-frame">
-          <img id="flipbook-page" src="" alt="Flipbook page" style="cursor: zoom-in;" />
-          <div id="flipbook-overlay" class="flipbook-overlay hidden">
-            <h3>Want to read the full book?</h3>
-            <p>Buy now to unlock complete access.</p>
-            <div class="flipbook-cta">
-              <a id="flip-buy-amazon" class="btn btn-primary" target="_blank">
-                Buy on Amazon
-              </a>
-              <a id="flip-buy-whatsapp" class="btn btn-success" target="_blank">
-                Buy from us
-              </a>
-              <a id="flip-download-pdf" class="btn btn-primary" download target="_blank">
-                Download PDF
-              </a>
-
-            </div>
-          </div>
-        </div>
-
-        <button class="flip-btn next" id="flip-next">→</button>
+  
+      <div class="cards-grid" id="sample-chapters">
+        <!-- Cards injected by JS -->
       </div>
     </div>
   </section>
+  
   <!-- Links -->
   <section id="links" class="section">
     <div class="container">
@@ -318,43 +297,6 @@
     </div>
   </div>
 
-  <!-- Flipbook Fullscreen Modal -->
-  <!-- Flipbook Fullscreen Modal -->
-  <div class="modal" id="flipbook-modal" aria-hidden="true">
-    <div class="modal-backdrop" data-modal-close></div>
-
-    <div class="modal-dialog modal-dialog-large">
-      <button class="modal-close" data-modal-close>✕</button>
-
-      <div class="modal-content flipbook-fullscreen">
-
-        <button class="flip-btn prev" id="flip-full-prev">←</button>
-
-        <div class="flipbook-frame fullscreen">
-          <img id="flipbook-full-page" alt="Flipbook page" />
-
-          <div id="flipbook-full-overlay" class="flipbook-overlay hidden">
-            <h3>Want to read the full book?</h3>
-            <p>Buy now to unlock complete access.</p>
-            <div class="flipbook-cta">
-              <a id="flip-full-amazon" class="btn btn-primary" target="_blank">
-                Buy on Amazon
-              </a>
-              <a id="flip-full-whatsapp" class="btn btn-success" target="_blank">
-                Buy from us
-              </a>
-              <a id="flip-full-pdf" class="btn btn-primary" target="_blank">
-                Download PDF
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <button class="flip-btn next" id="flip-full-next">→</button>
-
-      </div>
-    </div>
-  </div>
 
   <!-- Image Lightbox -->
   <div class="modal" id="lightbox-modal" aria-hidden="true">

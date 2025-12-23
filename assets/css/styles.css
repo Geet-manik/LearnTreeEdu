@@ -423,7 +423,7 @@
   .cards-grid {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, minmax(320px,540px)); 
+    grid-template-columns: repeat(auto-fit, minmax(320px,560px)); 
     gap: 1.5rem;
   }
 
@@ -1016,167 +1016,45 @@ margin-bottom: 5vh;
    Flipbook Section
 ========================= */
 
-.flipbook-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
 
-.flipbook-frame {
-  position: relative;
-  width: 100vw;
-  height: 90vh;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: var(--shadow-card);
-  background: #020617;
-}
 
-.flipbook-frame img {
+.modal-dialog-large {
   width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background: #020617;
+  height: 100vh;
+  margin: 0;
 }
 
-.flip-btn {
-  width: 38px;
-  height: 38px;
-  border-radius: 999px;
-  border: 1px solid rgba(148,163,184,0.5);
-  background: rgba(15,23,42,0.9);
-  color: white;
-  cursor: pointer;
-}
-
-/* Overlay after preview limit */
-.flipbook-overlay {
-  position: absolute;
-  inset: 0;
-  background: rgba(2,6,23,0.92);
+.sample-card {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 1.5rem;
-}
-
-.flipbook-overlay h3 {
-  margin-bottom: 0.5rem;
-}
-
-.flipbook-cta {
-  display: flex;
   gap: 0.75rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-  justify-content: center;
 }
-.hidden {
-  display: none;
+
+.sample-card h3 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.sample-desc {
+  font-size: 0.88rem;
+  color: var(--clr-muted);
+}
+
+.sample-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 0.5rem;
 }
 
 /* Mobile */
 @media (max-width: 600px) {
-  .flipbook-frame {
+  .sample-actions {
+    flex-direction: column;
+  }
+
+  .sample-actions .btn {
     width: 100%;
-    height: 420px;
-  }
-}
-/* Active nav link */
-.nav-links a.active {
-  background: linear-gradient(135deg, #2563eb, #1d4ed8);
-  color: #ffffff;
-  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.45);
-}
-.modal-dialog-large {
-  max-width: 100%;
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
-}
-
-.modal-dialog-large .modal-content {
-  height: 100%;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-#flipbook-full-image {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-}
-.flipbook-fullscreen {
-  width: 100%;
-  height: 100vh;
-  background: #000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.flipbook-frame.fullscreen {
-  width: 90%;
-  height: 90%;
-  position: relative;
-}
-
-.flipbook-frame.fullscreen img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
-.modal-dialog-large {
-  width: 100%;
-  height: 100vh;
-  margin: 0;
-}
-@media (max-width: 600px) {
-  .flipbook-overlay {
-    padding: 1.25rem;
-  }
-
-  .flipbook-overlay h3 {
-    font-size: 1.05rem;
-  }
-
-  .flipbook-overlay p {
-    font-size: 0.85rem;
-    line-height: 1.4;
-  }
-
-  .flipbook-cta {
-    flex-direction: column;        /* 🔥 stack buttons */
-    width: 100%;
-    gap: 0.6rem;
-  }
-
-  .flipbook-cta .btn {
-    width: 100%;                   /* 🔥 full-width buttons */
     justify-content: center;
-    font-size: 0.9rem;
-    padding: 0.5rem 0.8rem;          /* better tap size */
-  }
-}
-@media (min-width: 601px) and (max-width: 900px) {
-  .flipbook-frame {
-    height: 70vh;
-  }
-
-  .flipbook-cta {
-    gap: 0.6rem;
-  }
-
-  .flipbook-cta .btn {
-    padding: 0.6rem 1.1rem;
-    font-size: 0.85rem;
   }
 }
