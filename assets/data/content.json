@@ -4,6 +4,8 @@
     "tagline": "Striving towards excellence in Commerce Education",
     "heroTitle": "Objective Type Questions that prepare students for Boards, CUET & Olympiads",
     "heroSubtitle": "Curated by experienced Business Studies educators, aligned with the latest CBSE guidelines and designed for high-stakes exams.",
+    "seoTitle": "Business Studies OTQ Books for Class 12 | CBSE & CUET",
+    "seoDescription": "Buy Business Studies Objective Type Questions (OTQ) books for Class XII. Aligned with CBSE, CUET, Olympiads and competitive exams.",
     "heroHighlights": [
       "3000+ quality questions in multiple formats",
       "NCERT-based, competency-focused content",
@@ -234,13 +236,19 @@
 
   "books": {
     "subtitle": "Books you can directly buy from Amazon or your preferred marketplace.",
+    
     "items": [
       {
         "id": "bst12-otq",
         "title": "Objective Type Questions on Business Studies – Class XII",
+        "seoTitle": "Objective Type Questions (OTQ) Business Studies Class 12 | CBSE & CUET",
+"seoDescription": "3000+ competency-based Objective Type Questions for Business Studies Class XII. Ideal for CBSE Board, CUET, Olympiads and competitive exams.",
         "edition": "Latest Edition",
         "class": "CBSE Class XII",
         "coverImage": "assets/img/frontcover.jpeg",
+        "coverImageAlt": "Objective Type Questions Business Studies Class XII book cover",
+        "backImageAlt": "Back cover of Objective Type Questions Business Studies Class XII book",
+
         "backImage": "assets/img/backcover.jpeg",
         "price": 275,
         "currency": "INR",
