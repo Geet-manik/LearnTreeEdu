@@ -18,7 +18,7 @@
   <link rel="canonical" href="https://www.thelte.com/" />
   <link rel="icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  
+
   <!-- Open Graph -->
   <meta property="og:title" content="Learning Tree Edusolutions – Business Studies Books" />
   <meta property="og:description" content="3000+ competency-based MCQs for CBSE, CUET & Olympiads." />
@@ -34,17 +34,28 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="assets/css/styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Learning Tree Edusolutions",
+    "url": "https://www.thelte.com",
+    "logo": "https://www.thelte.com/assets/img/Logo.jpeg"
+  }
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-V8MHZQWVGC"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-V8MHZQWVGC');
+  </script>
 </head>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-V8MHZQWVGC"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-V8MHZQWVGC');
-</script>
 <body>
   <!-- Header / Nav -->
   <header class="site-header">
@@ -76,7 +87,7 @@
         <h1 id="hero-title">
           Objective Type Questions in Business Studies – Class XII
         </h1>
-        
+
         <p class="hero-subtitle" id="hero-subtitle"></p>
 
         <div class="hero-actions">
@@ -89,9 +100,8 @@
       <div class="hero-visual">
         <div class="hero-book-card">
           <!-- this src is just a fallback; JS will replace it with JSON coverImage -->
-<img id="hero-book-cover"
-     src="assets/img/frontcover.jpeg"
-     alt="Objective Type Questions Business Studies Class XII book cover" />
+          <img id="hero-book-cover" src="assets/img/frontcover.jpeg"
+            alt="Objective Type Questions Business Studies Class XII book cover" />
 
           <div class="hero-book-info">
             <h3 id="hero-book-title">Business Studies OTQ Book</h3>
@@ -124,7 +134,8 @@
           <p>Through our <b>flagship series</b>, we are committed to publishing comprehensive books in <b>Business
               Studies and Accountancy</b> aligned with various examinations. At present, our publications include
             <b>Objective Type Questions in Business Studies (Class XII)</b> and <b>Textbook on Business Studies (Class
-              XII)</b>, published by <b>Goyal Brothers Prakashan</b>.</p>
+              XII)</b>, published by <b>Goyal Brothers Prakashan</b>.
+          </p>
           <p>We work closely with experienced school teachers and subject experts from schools of high repute to ensure
             that our content remains <b>practical, classroom-tested, student-friendly, and up-to-date</b> with the
             latest guidelines of respective academic bodies.
@@ -269,8 +280,8 @@
     <div class="container">
       <div class="section-header">
         <h2 id="papers-title">
-  Previous Year Question Papers
-</h2>
+          Previous Year Question Papers
+        </h2>
 
         <p class="section-subtitle" id="papers-subtitle"></p>
       </div>
@@ -280,7 +291,7 @@
       </div>
     </div>
   </section>
- <section id="samples" class="section section-alt">
+  <section id="samples" class="section section-alt">
     <div class="container">
       <div class="section-header">
         <h2>Sample Chapters</h2>
@@ -288,13 +299,13 @@
           Download sample chapters from our books before you buy.
         </p>
       </div>
-  
+
       <div class="cards-grid" id="sample-chapters">
         <!-- Cards injected by JS -->
       </div>
     </div>
   </section>
-  
+
   <!-- Links -->
   <section id="links" class="section">
     <div class="container">
@@ -335,7 +346,7 @@
       <h2 id="book-modal-title" class="visually-hidden">
         Book Details
       </h2>
-      
+
       <button class="modal-close" aria-label="Close" data-modal-close>&times;</button>
       <div class="modal-content" id="book-modal-content">
         <!-- filled by JS -->
@@ -350,9 +361,7 @@
     <div class="modal-dialog modal-dialog-large">
       <button class="modal-close" aria-label="Close" data-modal-close>&times;</button>
       <div class="modal-content lightbox-content">
-       <img id="lightbox-image"
-     src="assets/img/frontcover.jpeg"
-     alt="Expanded image preview">
+        <img id="lightbox-image" src="assets/img/frontcover.jpeg" alt="Expanded image preview">
         <p id="lightbox-caption"></p>
       </div>
     </div>
