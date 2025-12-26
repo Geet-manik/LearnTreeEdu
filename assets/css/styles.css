@@ -938,6 +938,14 @@ margin-bottom: 5vh;
 .book-card {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
 
 .testimonial-card:hover,
 .workshop-card:hover,
